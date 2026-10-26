@@ -46,6 +46,7 @@ const assert=require('node:assert/strict');
   assert.equal(await page.locator('#fit-state').getAttribute('data-state'),'completed');
   assert.equal(await page.locator('#results svg').count(),3);
   assert.ok(await page.locator('#summary-body tr').count()>0);
+  assert.equal(await page.locator('#summary-body th small').first().evaluate(e=>getComputedStyle(e).display),'block','summary units retain their own line; full stylesheet parsed');
   const downloadEvent=page.waitForEvent('download');await page.locator('#export-button').click();
   const download=await downloadEvent;const filename=path.join(folder,type+'-export.json');await download.saveAs(filename);
   const result=JSON.parse(await fs.readFile(filename,'utf8'));
