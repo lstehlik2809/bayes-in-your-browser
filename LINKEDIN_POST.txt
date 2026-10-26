@@ -6,7 +6,7 @@ This seems quite useful for PA, where we often work with relatively small datase
 
 To try it out, I built a small site inspired by Andrew Marritt’s free online book, Bayesian Thinking for People Analytics, which I recommended here recently.
 
-It uses the familiar IBM attrition dataset and lets you estimate attrition proportions, compare income between groups, and fit linear and logistic regressions. You choose the variables, run the model, and inspect the posterior distributions, credible intervals and results tables. The sampling progress is visible, and there are diagnostics to help you spot when a fit needs more attention.
+It uses the familiar IBM attrition dataset and lets you estimate attrition proportions, compare income between groups, and fit linear and logistic regressions. There is also ordinal regression for satisfaction ratings and a hierarchical income model that makes partial pooling across groups visible. You choose the variables, run the model, and inspect the posterior distributions, credible intervals and results tables. The sampling progress is visible, and there are diagnostics to help you spot when a fit needs more attention.
 
 The calculations run in your browser. The site is plain HTML, CSS and JavaScript hosted on GitHub Pages, with a background worker doing the sampling so the interface stays responsive. There is no model-fitting server to set up or pay for.
 

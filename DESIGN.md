@@ -18,6 +18,8 @@ Primary viewport: ordinary desktop browser; also support narrow screens and enla
 | Group income comparison | Gaussian model of log(MonthlyIncome) in the two chosen groups | Exponentiated group means are geometric means; their ratio is not an arithmetic mean difference |
 | Income regression | Gaussian model of log(MonthlyIncome), conditional on the chosen predictors | Exponentiated slope is a multiplier for the stated predictor change; no currency is assumed |
 | Attrition regression | Bernoulli model with a logistic link | Coefficients are conditional log odds, odds ratios are not risk ratios; any displayed probabilities must state the predictor profile |
+| Ordinal satisfaction model | Proportional-odds cumulative-logit model of four ordered response categories | Odds of being above a cutoff and category probabilities at an explicit reference profile; no equal spacing assumption |
+| Hierarchical income | Normal log-income model with a shared distribution of group deviations | Typical-group baseline, partially pooled group geometric incomes, within/between SDs and share of modeled log-income variance |
 | Posterior interval | Empirical 2.5th and 97.5th quantiles of retained draws | 95% equal-tailed credible interval, conditional on model/prior/data |
 | Direction probability | Fraction of retained draws above the stated null (0 for a difference/log coefficient, 1 for a ratio) | Model-conditional posterior probability, not a p-value |
 | Sampling diagnostics | Chain agreement and effective information after warmup | Warnings limit interpretation; a passing check does not establish model adequacy |
@@ -28,6 +30,8 @@ The dataset is a fictional cross-sectional demonstration. Each row is one employ
 
 - Use posterior histograms for distribution shape and aligned dots with credible intervals for comparisons. Both are computed from actual retained draws. A density-only display would make exact between-group comparisons harder.
 - Use a trace view to reveal movement of the separate chains. Its vertical axis describes the selected parameter; its horizontal axis is retained iteration.
+- For ordinal models, show the four reference-profile category probabilities with intervals. Observed counts remain separate data context rather than a predictive check at that profile.
+- For hierarchical income, place posterior group medians/intervals beside hollow diamonds marking unpooled observed geometric means, with group sizes. Use a shared income scale; distinguish the typical-group baseline from an employee-weighted company average. Explain few-group prior sensitivity.
 - Use tables for precise lookup: parameter, estimate, interval and diagnostics, with human-readable units and consistent numerical precision. The full IBM record table is not part of the primary analysis view.
 - Keep comparable estimates on a common axis. Bars start at zero; intervals may use a narrower, explicitly labeled domain. Reference values are 0 for additive coefficients and 1 for multiplicative comparisons.
 - Use an understated teal emphasis for posterior estimates, neutral context, distinct labeled chain treatments, and explicit text for warnings. Dark mode changes surfaces and contrast while preserving meanings.
@@ -36,7 +40,7 @@ The dataset is a fictional cross-sectional demonstration. Each row is one employ
 
 ## Interaction contract
 
-Scope and model settings determine the entire result. Changing a result-affecting control invalidates the previous result. Results, explanatory text, charts, denominators, and exports must always refer to the same request. The worker's progress reports real iterations. Cancel terminates the active fit; a cancelled or superseded fit cannot publish results. Warmup is visibly separate from retained sampling.
+Scope and model settings determine the entire result. Changing a result-affecting control, including the ordinal outcome or hierarchical grouping, invalidates the previous result. Results, explanatory text, charts, denominators, and exports must always refer to the same request. The worker's progress reports real iterations/sweeps. Cancel terminates the active fit; a cancelled or superseded fit cannot publish results. Warmup is visibly separate from retained sampling for the three MCMC models; exact conjugate draws need none.
 
 Before fitting, show an explicit ready state. During fitting, preserve a responsive interface and expose cancellation. On errors, say what failed and provide a recovery path. Do not present placeholders or previous fits as current observations.
 

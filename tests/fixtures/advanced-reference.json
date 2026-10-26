@@ -1,0 +1,2209 @@
+{
+  "ordinalRows": [
+    {
+      "Age": 22,
+      "JobSatisfaction": 1,
+      "EnvironmentSatisfaction": 1,
+      "WorkLifeBalance": 1,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 1,
+      "EnvironmentSatisfaction": 1,
+      "WorkLifeBalance": 1,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 1,
+      "EnvironmentSatisfaction": 1,
+      "WorkLifeBalance": 1,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 1,
+      "EnvironmentSatisfaction": 1,
+      "WorkLifeBalance": 1,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 1,
+      "EnvironmentSatisfaction": 1,
+      "WorkLifeBalance": 1,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 1,
+      "EnvironmentSatisfaction": 1,
+      "WorkLifeBalance": 1,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 1,
+      "EnvironmentSatisfaction": 1,
+      "WorkLifeBalance": 1,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 1,
+      "EnvironmentSatisfaction": 1,
+      "WorkLifeBalance": 1,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 1,
+      "EnvironmentSatisfaction": 1,
+      "WorkLifeBalance": 1,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 3,
+      "EnvironmentSatisfaction": 3,
+      "WorkLifeBalance": 3,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 3,
+      "EnvironmentSatisfaction": 3,
+      "WorkLifeBalance": 3,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 3,
+      "EnvironmentSatisfaction": 3,
+      "WorkLifeBalance": 3,
+      "Department": "Sales"
+    },
+    {
+      "Age": 22,
+      "JobSatisfaction": 4,
+      "EnvironmentSatisfaction": 4,
+      "WorkLifeBalance": 4,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 1,
+      "EnvironmentSatisfaction": 1,
+      "WorkLifeBalance": 1,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 1,
+      "EnvironmentSatisfaction": 1,
+      "WorkLifeBalance": 1,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 1,
+      "EnvironmentSatisfaction": 1,
+      "WorkLifeBalance": 1,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 1,
+      "EnvironmentSatisfaction": 1,
+      "WorkLifeBalance": 1,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 3,
+      "EnvironmentSatisfaction": 3,
+      "WorkLifeBalance": 3,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 3,
+      "EnvironmentSatisfaction": 3,
+      "WorkLifeBalance": 3,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 3,
+      "EnvironmentSatisfaction": 3,
+      "WorkLifeBalance": 3,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 3,
+      "EnvironmentSatisfaction": 3,
+      "WorkLifeBalance": 3,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 3,
+      "EnvironmentSatisfaction": 3,
+      "WorkLifeBalance": 3,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 4,
+      "EnvironmentSatisfaction": 4,
+      "WorkLifeBalance": 4,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 4,
+      "EnvironmentSatisfaction": 4,
+      "WorkLifeBalance": 4,
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "JobSatisfaction": 4,
+      "EnvironmentSatisfaction": 4,
+      "WorkLifeBalance": 4,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 1,
+      "EnvironmentSatisfaction": 1,
+      "WorkLifeBalance": 1,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 2,
+      "EnvironmentSatisfaction": 2,
+      "WorkLifeBalance": 2,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 3,
+      "EnvironmentSatisfaction": 3,
+      "WorkLifeBalance": 3,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 3,
+      "EnvironmentSatisfaction": 3,
+      "WorkLifeBalance": 3,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 3,
+      "EnvironmentSatisfaction": 3,
+      "WorkLifeBalance": 3,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 3,
+      "EnvironmentSatisfaction": 3,
+      "WorkLifeBalance": 3,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 3,
+      "EnvironmentSatisfaction": 3,
+      "WorkLifeBalance": 3,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 3,
+      "EnvironmentSatisfaction": 3,
+      "WorkLifeBalance": 3,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 3,
+      "EnvironmentSatisfaction": 3,
+      "WorkLifeBalance": 3,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 4,
+      "EnvironmentSatisfaction": 4,
+      "WorkLifeBalance": 4,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 4,
+      "EnvironmentSatisfaction": 4,
+      "WorkLifeBalance": 4,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 4,
+      "EnvironmentSatisfaction": 4,
+      "WorkLifeBalance": 4,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 4,
+      "EnvironmentSatisfaction": 4,
+      "WorkLifeBalance": 4,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 4,
+      "EnvironmentSatisfaction": 4,
+      "WorkLifeBalance": 4,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 4,
+      "EnvironmentSatisfaction": 4,
+      "WorkLifeBalance": 4,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 4,
+      "EnvironmentSatisfaction": 4,
+      "WorkLifeBalance": 4,
+      "Department": "Sales"
+    },
+    {
+      "Age": 42,
+      "JobSatisfaction": 4,
+      "EnvironmentSatisfaction": 4,
+      "WorkLifeBalance": 4,
+      "Department": "Sales"
+    }
+  ],
+  "hierarchicalRows": [
+    {
+      "JobRole": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 4248.493497833482
+    },
+    {
+      "JobRole": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 2751.3926106917415
+    },
+    {
+      "JobRole": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 8138.162756900099
+    },
+    {
+      "JobRole": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 5270.404882427164
+    },
+    {
+      "JobRole": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 2492.8713944576734
+    },
+    {
+      "JobRole": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 7002.522186323394
+    },
+    {
+      "JobRole": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 3996.5273439866955
+    },
+    {
+      "JobRole": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 4748.477164992654
+    },
+    {
+      "JobRole": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 7528.299909743128
+    },
+    {
+      "JobRole": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 2313.7571348181255
+    },
+    {
+      "JobRole": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 5212.573439291877
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 10449.607825001309
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 6767.333825271646
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 3200.910231017462
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 8991.41646815905
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 5131.642688166469
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 6097.165370411918
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 9666.528428558207
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 2970.922969149078
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 6693.076782402206
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 9225.384528813582
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 4080.8504503154713
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 8615.406128104323
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 4566.42251516809
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 4246.640110054616
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 12631.804986027451
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 4442.562403109629
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 5049.131014892896
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 7767.639554478445
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 3746.477338133115
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 10018.209455106786
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 6924.24112440347
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 3081.4758928074684
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 9065.743062717715
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 5485.365759373934
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 5747.737270359722
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 9587.145511411638
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 3034.0663963418297
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 6544.81987531863
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 9767.939159494168
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 3962.623689167227
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 8166.503136085133
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 4844.6276339587685
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 4202.699227881982
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 12692.037114125045
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 4496.239346507521
+    }
+  ],
+  "singletonRows": [
+    {
+      "JobRole": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 4248.493497833482
+    },
+    {
+      "JobRole": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 8138.162756900099
+    },
+    {
+      "JobRole": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 5270.404882427164
+    },
+    {
+      "JobRole": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 2492.8713944576734
+    },
+    {
+      "JobRole": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 7002.522186323394
+    },
+    {
+      "JobRole": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 3996.5273439866955
+    },
+    {
+      "JobRole": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 4748.477164992654
+    },
+    {
+      "JobRole": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 7528.299909743128
+    },
+    {
+      "JobRole": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 2313.7571348181255
+    },
+    {
+      "JobRole": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 5212.573439291877
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 10449.607825001309
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 6767.333825271646
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 3200.910231017462
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 8991.41646815905
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 5131.642688166469
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 6097.165370411918
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 9666.528428558207
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 2970.922969149078
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 6693.076782402206
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 9225.384528813582
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 4080.8504503154713
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 8615.406128104323
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 4566.42251516809
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 4246.640110054616
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 12631.804986027451
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 4442.562403109629
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 5049.131014892896
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 7767.639554478445
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 3746.477338133115
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 10018.209455106786
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 6924.24112440347
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 3081.4758928074684
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 9065.743062717715
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 5485.365759373934
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 5747.737270359722
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 9587.145511411638
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 3034.0663963418297
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 6544.81987531863
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 9767.939159494168
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 3962.623689167227
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 8166.503136085133
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 4844.6276339587685
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 4202.699227881982
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 12692.037114125045
+    },
+    {
+      "JobRole": "C",
+      "Department": "Sales",
+      "MonthlyIncome": 4496.239346507521
+    }
+  ],
+  "ordinal": {
+    "default": {
+      "stats": {
+        "c1": {
+          "mean": -1.4274120645577921,
+          "sd": 0.3176895348286376,
+          "median": -1.4196170354458695,
+          "lower": -2.072711706239152,
+          "upper": -0.8264864425667406,
+          "error": {
+            "mean": 3.412640431271631e-05,
+            "median": 5.365271457234607e-05,
+            "lower": 0.0004217982880113929,
+            "upper": 0.000418463425785506
+          }
+        },
+        "log_gap2": {
+          "mean": 0.4938320782071377,
+          "sd": 0.19391054439828265,
+          "median": 0.5005106107865599,
+          "lower": 0.09509711150809559,
+          "upper": 0.8546561351591087,
+          "error": {
+            "mean": 1.972707574624692e-05,
+            "median": 0.0002048506053266998,
+            "lower": 0.00041474563842838264,
+            "upper": 0.0006527027188500185
+          }
+        },
+        "log_gap3": {
+          "mean": 0.34523223073120174,
+          "sd": 0.2140274173377436,
+          "median": 0.35294780622690225,
+          "lower": -0.09580771728266818,
+          "upper": 0.7428239997705626,
+          "error": {
+            "mean": 1.898750206503983e-05,
+            "median": 0.00022028795659299072,
+            "lower": 0.0013416986655774774,
+            "upper": 0.0007457851030797392
+          }
+        },
+        "beta_Age": {
+          "mean": 0.9890580208036706,
+          "sd": 0.25603723409976786,
+          "median": 0.9854959529995055,
+          "lower": 0.4969011439058123,
+          "upper": 1.5011955253395222,
+          "error": {
+            "mean": 1.589121766809587e-05,
+            "median": 0.00030431724853140495,
+            "lower": 0.0011139902993398932,
+            "upper": 0.0014091966052336945
+          }
+        },
+        "c2": {
+          "mean": 0.24185677401409406,
+          "sd": 0.27668521366013876,
+          "median": 0.24007310517689062,
+          "lower": -0.2961876799471185,
+          "upper": 0.7900184135725521,
+          "error": {
+            "mean": 4.365866595966306e-05,
+            "median": 0.00019925066031181913,
+            "lower": 0.0006434355542508607,
+            "upper": 0.0005916515566608494
+          }
+        },
+        "c3": {
+          "mean": 1.686395661927146,
+          "sd": 0.3426658351257953,
+          "median": 1.6762629617712705,
+          "lower": 1.043487103128594,
+          "upper": 2.38752784438781,
+          "error": {
+            "mean": 4.214000254133051e-05,
+            "median": 0.00036136051633943575,
+            "lower": 0.0014296320869155393,
+            "upper": 0.0008886935149674533
+          }
+        },
+        "odds_Age": {
+          "mean": 2.7789603115047283,
+          "sd": 0.7318335155656785,
+          "median": 2.6791403043699415,
+          "lower": 1.6436201297618809,
+          "upper": 4.487051004310398,
+          "error": {
+            "mean": 4.112601031858176e-05,
+            "median": 0.0008153930217512222,
+            "lower": 0.001830949337341302,
+            "upper": 0.006326467353362606
+          }
+        },
+        "p1": {
+          "mean": 0.19821865251640294,
+          "sd": 0.049468645048458944,
+          "median": 0.19472162738843737,
+          "lower": 0.11177752902188484,
+          "upper": 0.304388506805657,
+          "error": {
+            "mean": 4.7004554376043455e-06,
+            "median": 8.413078444209847e-06,
+            "lower": 4.187640024498975e-05,
+            "upper": 8.860250026323599e-05
+          }
+        },
+        "p2": {
+          "mean": 0.3608432377077213,
+          "sd": 0.06381227541355633,
+          "median": 0.3585270795128497,
+          "lower": 0.24287601029116918,
+          "upper": 0.4918758833276955,
+          "error": {
+            "mean": 7.857073470745703e-06,
+            "median": 3.193337460500693e-05,
+            "lower": 0.00011082902690013206,
+            "upper": 0.00015950940731919279
+          }
+        },
+        "p3": {
+          "mean": 0.2794874156918976,
+          "sd": 0.057420218982868136,
+          "median": 0.27651206323983485,
+          "lower": 0.17597013028322211,
+          "upper": 0.3998129896928484,
+          "error": {
+            "mean": 6.713322139669359e-06,
+            "median": 6.292341745683938e-05,
+            "lower": 0.00018664409737054142,
+            "upper": 0.00030633018852780513
+          }
+        },
+        "p4": {
+          "mean": 0.16145069408398288,
+          "sd": 0.04535100651319415,
+          "median": 0.15759055335302508,
+          "lower": 0.08412755972753339,
+          "upper": 0.2604749834439102,
+          "error": {
+            "mean": 5.592496754738174e-06,
+            "median": 4.7348559546295496e-05,
+            "lower": 6.909548913739735e-05,
+            "upper": 0.00027374390164177596
+          }
+        }
+      },
+      "diagnostics": [
+        {
+          "power": 17,
+          "scale": 1.0,
+          "seed": 11,
+          "n": 131072,
+          "weightESS": 114963.08637786252,
+          "maxWeight": 2.0013386114999063e-05
+        },
+        {
+          "power": 17,
+          "scale": 1.0,
+          "seed": 29,
+          "n": 131072,
+          "weightESS": 114966.5045382724,
+          "maxWeight": 1.9904479093911795e-05
+        },
+        {
+          "power": 17,
+          "scale": 1.0,
+          "seed": 41,
+          "n": 131072,
+          "weightESS": 114956.37284621061,
+          "maxWeight": 2.002387066608985e-05
+        },
+        {
+          "power": 17,
+          "scale": 1.0,
+          "seed": 61,
+          "n": 131072,
+          "weightESS": 114959.25084641034,
+          "maxWeight": 1.9702647612728237e-05
+        },
+        {
+          "power": 17,
+          "scale": 1.5,
+          "seed": 11,
+          "n": 131072,
+          "weightESS": 63645.0555672205,
+          "maxWeight": 2.9437898352138355e-05
+        },
+        {
+          "power": 17,
+          "scale": 1.5,
+          "seed": 29,
+          "n": 131072,
+          "weightESS": 63646.55079483333,
+          "maxWeight": 2.9432711337908877e-05
+        },
+        {
+          "power": 17,
+          "scale": 1.5,
+          "seed": 41,
+          "n": 131072,
+          "weightESS": 63652.856748388826,
+          "maxWeight": 2.944219818467508e-05
+        },
+        {
+          "power": 17,
+          "scale": 1.5,
+          "seed": 61,
+          "n": 131072,
+          "weightESS": 63657.728305526834,
+          "maxWeight": 2.9365755570461683e-05
+        },
+        {
+          "power": 18,
+          "scale": 1.0,
+          "seed": 11,
+          "n": 262144,
+          "weightESS": 229917.45313735044,
+          "maxWeight": 1.0008029587052068e-05
+        },
+        {
+          "power": 18,
+          "scale": 1.0,
+          "seed": 29,
+          "n": 262144,
+          "weightESS": 229922.62665622533,
+          "maxWeight": 9.962279862439386e-06
+        },
+        {
+          "power": 18,
+          "scale": 1.0,
+          "seed": 41,
+          "n": 262144,
+          "weightESS": 229912.84698875074,
+          "maxWeight": 1.0011668759520614e-05
+        },
+        {
+          "power": 18,
+          "scale": 1.0,
+          "seed": 61,
+          "n": 262144,
+          "weightESS": 229919.43936198502,
+          "maxWeight": 9.890856943670204e-06
+        },
+        {
+          "power": 18,
+          "scale": 1.5,
+          "seed": 11,
+          "n": 262144,
+          "weightESS": 127333.0735879567,
+          "maxWeight": 1.4732309649901803e-05
+        },
+        {
+          "power": 18,
+          "scale": 1.5,
+          "seed": 29,
+          "n": 262144,
+          "weightESS": 127310.41133608228,
+          "maxWeight": 1.4722250951409656e-05
+        },
+        {
+          "power": 18,
+          "scale": 1.5,
+          "seed": 41,
+          "n": 262144,
+          "weightESS": 127304.25877841807,
+          "maxWeight": 1.472120065111585e-05
+        },
+        {
+          "power": 18,
+          "scale": 1.5,
+          "seed": 61,
+          "n": 262144,
+          "weightESS": 127308.36505090276,
+          "maxWeight": 1.4738446794942036e-05
+        }
+      ],
+      "mode": [
+        -1.4205297666389103,
+        0.5064176314172185,
+        0.36098595885612184,
+        0.976279470858118
+      ],
+      "proposalCovariance": [
+        [
+          0.09918870688582763,
+          -0.03775228056685835,
+          -0.013408990116533863,
+          -0.01837566925575477
+        ],
+        [
+          -0.03775228056685834,
+          0.036818196622500195,
+          -0.0029222816562613804,
+          0.014261025290548833
+        ],
+        [
+          -0.013408990116533872,
+          -0.002922281656261375,
+          0.04483058115430896,
+          0.01256065252658411
+        ],
+        [
+          -0.018375669255754772,
+          0.014261025290548835,
+          0.012560652526584112,
+          0.0641583961451165
+        ]
+      ],
+      "method": "Independent t7 importance integration; 4 scrambled Sobol replicates, powers17/18, scales1/1.5; per-functional uncertainty."
+    },
+    "wide": {
+      "stats": {
+        "c1": {
+          "mean": -1.453626651339882,
+          "sd": 0.33507955014495755,
+          "median": -1.4442411284320942,
+          "lower": -2.1375934689994587,
+          "upper": -0.8231846038664575,
+          "error": {
+            "mean": 4.1314341221857584e-05,
+            "median": 6.481146978430468e-05,
+            "lower": 0.000337390489727095,
+            "upper": 0.0003864922590030044
+          }
+        },
+        "log_gap2": {
+          "mean": 0.5165794449527485,
+          "sd": 0.2064020284043315,
+          "median": 0.5246612784199571,
+          "lower": 0.08901038206347536,
+          "upper": 0.8979433043431346,
+          "error": {
+            "mean": 2.3553427566532092e-05,
+            "median": 0.00023090431994854664,
+            "lower": 0.0004472942241473524,
+            "upper": 0.0004444806488783648
+          }
+        },
+        "log_gap3": {
+          "mean": 0.34470645117103826,
+          "sd": 0.23197855233694914,
+          "median": 0.35486330948931066,
+          "lower": -0.13896904427416001,
+          "upper": 0.7703482466774119,
+          "error": {
+            "mean": 2.5204399400644452e-05,
+            "median": 0.00015001703846515555,
+            "lower": 0.0011125559308539403,
+            "upper": 0.0007080761670889943
+          }
+        },
+        "beta_Age": {
+          "mean": 1.0511182357171773,
+          "sd": 0.26949891026466594,
+          "median": 1.0464225759791663,
+          "lower": 0.536048047236662,
+          "upper": 1.5930315939232667,
+          "error": {
+            "mean": 1.919870248245914e-05,
+            "median": 0.0002463810594796425,
+            "lower": 0.002040028925727883,
+            "upper": 0.0015509196028858857
+          }
+        },
+        "c2": {
+          "mean": 0.25816585295133077,
+          "sd": 0.2854591646949072,
+          "median": 0.2562069130132826,
+          "lower": -0.29649425538765817,
+          "upper": 0.8241082160175548,
+          "error": {
+            "mean": 4.592793967423132e-05,
+            "median": 0.00019079930900197243,
+            "lower": 0.00048525562328392775,
+            "upper": 0.0005089339325369756
+          }
+        },
+        "c3": {
+          "mean": 1.707458768078287,
+          "sd": 0.35801898401439936,
+          "median": 1.695780308574325,
+          "lower": 1.03849561804122,
+          "upper": 2.4427878600664026,
+          "error": {
+            "mean": 4.1093701981787235e-05,
+            "median": 0.0005906314931960771,
+            "lower": 0.001281312899164181,
+            "upper": 0.0007029831566459477
+          }
+        },
+        "odds_Age": {
+          "mean": 2.9677115439407427,
+          "sd": 0.8274294948995443,
+          "median": 2.8474463659351006,
+          "lower": 1.7092390251282825,
+          "upper": 4.918638521237942,
+          "error": {
+            "mean": 5.3087069465274084e-05,
+            "median": 0.0007015836017909484,
+            "lower": 0.00348601057055173,
+            "upper": 0.007631224815749493
+          }
+        },
+        "p1": {
+          "mean": 0.19466312162113825,
+          "sd": 0.05130320002878627,
+          "median": 0.19088944458674528,
+          "lower": 0.10549627170858751,
+          "upper": 0.30508807616880257,
+          "error": {
+            "mean": 5.518618418231386e-06,
+            "median": 1.0010183643630224e-05,
+            "lower": 3.1840666008262165e-05,
+            "upper": 8.193902331950913e-05
+          }
+        },
+        "p2": {
+          "mean": 0.36826745305515485,
+          "sd": 0.0682418053498042,
+          "median": 0.365880096396184,
+          "lower": 0.24187202061790491,
+          "upper": 0.5080860805367216,
+          "error": {
+            "mean": 8.444821446106829e-06,
+            "median": 7.18944707388896e-05,
+            "lower": 0.00023483322622618142,
+            "upper": 0.0001454975374111494
+          }
+        },
+        "p3": {
+          "mean": 0.2779468733276579,
+          "sd": 0.061136742344079856,
+          "median": 0.2747045564903293,
+          "lower": 0.16802394586507907,
+          "upper": 0.4062196535879312,
+          "error": {
+            "mean": 8.280316207492428e-06,
+            "median": 6.756343517711533e-05,
+            "lower": 0.00012201811584007426,
+            "upper": 0.00025570085994806494
+          }
+        },
+        "p4": {
+          "mean": 0.15912255199605085,
+          "sd": 0.04670672808873471,
+          "median": 0.15501663272895966,
+          "lower": 0.07996702604157847,
+          "upper": 0.26143818056017376,
+          "error": {
+            "mean": 5.7036669708985075e-06,
+            "median": 7.777335494087703e-05,
+            "lower": 5.174783781429606e-05,
+            "upper": 0.0002473510034105206
+          }
+        }
+      },
+      "diagnostics": [
+        {
+          "power": 17,
+          "scale": 1.0,
+          "seed": 11,
+          "n": 131072,
+          "weightESS": 113221.42303753548,
+          "maxWeight": 2.357454660197777e-05
+        },
+        {
+          "power": 17,
+          "scale": 1.0,
+          "seed": 29,
+          "n": 131072,
+          "weightESS": 113219.15077878154,
+          "maxWeight": 2.474277810565768e-05
+        },
+        {
+          "power": 17,
+          "scale": 1.0,
+          "seed": 41,
+          "n": 131072,
+          "weightESS": 113209.63811423379,
+          "maxWeight": 2.388738335426666e-05
+        },
+        {
+          "power": 17,
+          "scale": 1.0,
+          "seed": 61,
+          "n": 131072,
+          "weightESS": 113216.95774001269,
+          "maxWeight": 2.4413294951697907e-05
+        },
+        {
+          "power": 17,
+          "scale": 1.5,
+          "seed": 11,
+          "n": 131072,
+          "weightESS": 63670.18319040193,
+          "maxWeight": 2.9287180094611268e-05
+        },
+        {
+          "power": 17,
+          "scale": 1.5,
+          "seed": 29,
+          "n": 131072,
+          "weightESS": 63669.3356279857,
+          "maxWeight": 2.9282517019663585e-05
+        },
+        {
+          "power": 17,
+          "scale": 1.5,
+          "seed": 41,
+          "n": 131072,
+          "weightESS": 63675.97539941245,
+          "maxWeight": 2.9291726074753257e-05
+        },
+        {
+          "power": 17,
+          "scale": 1.5,
+          "seed": 61,
+          "n": 131072,
+          "weightESS": 63681.896850975005,
+          "maxWeight": 2.9216680255122505e-05
+        },
+        {
+          "power": 18,
+          "scale": 1.0,
+          "seed": 11,
+          "n": 262144,
+          "weightESS": 226436.3367427502,
+          "maxWeight": 1.1788806070321386e-05
+        },
+        {
+          "power": 18,
+          "scale": 1.0,
+          "seed": 29,
+          "n": 262144,
+          "weightESS": 226431.19104643693,
+          "maxWeight": 1.2371469670388379e-05
+        },
+        {
+          "power": 18,
+          "scale": 1.0,
+          "seed": 41,
+          "n": 262144,
+          "weightESS": 226418.2738393845,
+          "maxWeight": 1.2066243494550997e-05
+        },
+        {
+          "power": 18,
+          "scale": 1.0,
+          "seed": 61,
+          "n": 262144,
+          "weightESS": 226429.53466535715,
+          "maxWeight": 1.2299983636249953e-05
+        },
+        {
+          "power": 18,
+          "scale": 1.5,
+          "seed": 11,
+          "n": 262144,
+          "weightESS": 127381.2285784711,
+          "maxWeight": 1.4656960720305711e-05
+        },
+        {
+          "power": 18,
+          "scale": 1.5,
+          "seed": 29,
+          "n": 262144,
+          "weightESS": 127358.54458476881,
+          "maxWeight": 1.4647006500736788e-05
+        },
+        {
+          "power": 18,
+          "scale": 1.5,
+          "seed": 41,
+          "n": 262144,
+          "weightESS": 127350.80712583903,
+          "maxWeight": 1.4646017004560756e-05
+        },
+        {
+          "power": 18,
+          "scale": 1.5,
+          "seed": 61,
+          "n": 262144,
+          "weightESS": 127355.13929257014,
+          "maxWeight": 1.4663073684934832e-05
+        }
+      ],
+      "mode": [
+        -1.4472430705509658,
+        0.5316228553967629,
+        0.36599450547701623,
+        1.0361212349893947
+      ],
+      "proposalCovariance": [
+        [
+          0.11007913170007805,
+          -0.0439898973976505,
+          -0.016094085434135083,
+          -0.02375003685971953
+        ],
+        [
+          -0.0439898973976505,
+          0.04132966931784083,
+          -0.0032523197225711852,
+          0.01768155039556598
+        ],
+        [
+          -0.016094085434135076,
+          -0.00325231972257119,
+          0.05194204145777373,
+          0.01573018271168921
+        ],
+        [
+          -0.02375003685971954,
+          0.01768155039556598,
+          0.015730182711689217,
+          0.07088651311251545
+        ]
+      ],
+      "method": "Independent t7 importance integration; 4 scrambled Sobol replicates, powers17/18, scales1/1.5; per-functional uncertainty."
+    }
+  },
+  "hierarchical": {
+    "default": {
+      "stats": {
+        "mu": {
+          "mean": 8.496180009752914,
+          "sd": 0.2525346164632881,
+          "lower": 7.980260706828224,
+          "median": 8.500928130391587,
+          "upper": 8.984804435659576,
+          "error": {
+            "mean": 5.382361223382759e-13,
+            "median": 3.517186542012496e-13,
+            "lower": 2.851052727237402e-13,
+            "upper": 2.575717417130363e-13
+          }
+        },
+        "u_A": {
+          "mean": -0.18771433783671643,
+          "sd": 0.2915525116499416,
+          "lower": -0.7923390560664072,
+          "median": -0.17877204098021976,
+          "upper": 0.3662835324781093,
+          "error": {
+            "mean": 1.199040866595169e-14,
+            "median": 1.0549283668837006e-11,
+            "lower": 1.8891666009324126e-11,
+            "upper": 5.205835762467359e-13
+          }
+        },
+        "theta_A": {
+          "mean": 8.308465671916204,
+          "sd": 0.2688746460071349,
+          "lower": 7.7655553904199754,
+          "median": 8.3133510175451,
+          "upper": 8.824527867617094,
+          "error": {
+            "mean": 5.133671265866724e-13,
+            "median": 1.5058176927595923e-11,
+            "lower": 8.711253940418828e-12,
+            "upper": 6.039613253960852e-14
+          }
+        },
+        "u_B": {
+          "mean": -0.018610487994012007,
+          "sd": 0.2604009753018663,
+          "lower": -0.5274904712387766,
+          "median": -0.02189894412514448,
+          "upper": 0.5096027545930955,
+          "error": {
+            "mean": 1.1900203045200897e-15,
+            "median": 1.490980949814258e-11,
+            "lower": 2.575717417130363e-13,
+            "upper": 3.5216274341109965e-13
+          }
+        },
+        "theta_B": {
+          "mean": 8.477569521758905,
+          "sd": 0.14654541249604763,
+          "lower": 8.189261838594792,
+          "median": 8.477562844901584,
+          "upper": 8.76591423725327,
+          "error": {
+            "mean": 5.346834086594754e-13,
+            "median": 7.156941705943609e-12,
+            "lower": 3.19122506198255e-11,
+            "upper": 2.3709034735475143e-11
+          }
+        },
+        "u_C": {
+          "mean": 0.20493815959314246,
+          "sd": 0.25483371321644793,
+          "lower": -0.28486467336246757,
+          "median": 0.1989150110220548,
+          "upper": 0.7288676504619764,
+          "error": {
+            "mean": 1.2739809207573671e-14,
+            "median": 1.0635936575909e-12,
+            "lower": 2.4924506902834764e-13,
+            "upper": 2.8610447344590284e-13
+          }
+        },
+        "theta_C": {
+          "mean": 8.701118169346055,
+          "sd": 0.07801094676966111,
+          "lower": 8.547194588825414,
+          "median": 8.701257700116315,
+          "upper": 8.854246546379642,
+          "error": {
+            "mean": 5.453415496958769e-13,
+            "median": 1.6132872815433075e-11,
+            "lower": 6.410871833395504e-12,
+            "upper": 1.9539925233402755e-14
+          }
+        },
+        "sigma": {
+          "mean": 0.4655704238028154,
+          "sd": 0.04894081234049803,
+          "lower": 0.381539179614102,
+          "median": 0.4614368481294099,
+          "upper": 0.5732935357152107,
+          "error": {
+            "mean": 5.551115123125783e-17,
+            "median": 2.228047914509812e-05,
+            "lower": 0.0003710623351159126,
+            "upper": 0.0004539866104495971
+          }
+        },
+        "tau": {
+          "mean": 0.3734938801474729,
+          "sd": 0.13988998248011375,
+          "lower": 0.20284296574837138,
+          "median": 0.34270350305842073,
+          "upper": 0.7260160673167914,
+          "error": {
+            "mean": 1.1102230246251565e-16,
+            "median": 1.3117417783148344e-05,
+            "lower": 0.00014207344845240666,
+            "upper": 0.0002803854353888857
+          }
+        },
+        "icc": {
+          "mean": 0.3775344066008446,
+          "sd": 0.14932079625828515,
+          "lower": 0.1496307594633238,
+          "median": 0.35548844629370546,
+          "upper": 0.7206121300108704,
+          "error": {
+            "mean": 2.375877272697835e-14,
+            "median": 1.6653345369377348e-16,
+            "lower": 0.0003183822007149506,
+            "upper": 0.0005036032103789001
+          }
+        }
+      },
+      "groupCovariance": [
+        [
+          0.0722935752654621,
+          0.004563303439454103,
+          0.0009158378621378915
+        ],
+        [
+          0.004563303439454103,
+          0.021475557923636757,
+          0.00046414062937572
+        ],
+        [
+          0.0009158378621378915,
+          0.00046414062937572,
+          0.0060857078158989
+        ]
+      ],
+      "labels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "n": [
+        2,
+        9,
+        35
+      ],
+      "boundaryMass": 5.229163286718511e-22,
+      "droppedCDFMass": 2.4034065328866184e-13,
+      "size": 801,
+      "expanded": false,
+      "refinement": {
+        "size": 401,
+        "boundaryMass": 1.0458326573437267e-21,
+        "droppedCDFMass": 6.210935703327179e-14
+      },
+      "expandedDomain": {
+        "size": 801,
+        "boundaryMass": 5.635549809710798e-25,
+        "droppedCDFMass": 1.645110537578392e-13
+      }
+    },
+    "wide": {
+      "stats": {
+        "mu": {
+          "mean": 8.473265601966109,
+          "sd": 0.44942989661274263,
+          "lower": 7.568156932200635,
+          "median": 8.4766908563112,
+          "upper": 9.359356824611872,
+          "error": {
+            "mean": 5.204725539442734e-13,
+            "median": 5.329070518200751e-15,
+            "lower": 4.645173135031655e-13,
+            "upper": 1.70174985214544e-12
+          }
+        },
+        "u_A": {
+          "mean": -0.23382743948341483,
+          "sd": 0.4954358462752187,
+          "lower": -1.2366020252376353,
+          "median": -0.22725232739649726,
+          "upper": 0.73167473230027,
+          "error": {
+            "mean": 1.454392162258955e-14,
+            "median": 6.222522497267846e-13,
+            "lower": 6.605826996519681e-13,
+            "upper": 4.355404925604489e-13
+          }
+        },
+        "theta_A": {
+          "mean": 8.239438162482681,
+          "sd": 0.37092495343041126,
+          "lower": 7.505311480036766,
+          "median": 8.24095148469193,
+          "upper": 8.96516375181269,
+          "error": {
+            "mean": 5.151434834260726e-13,
+            "median": 8.881784197001252e-15,
+            "lower": 1.1945999744966684e-12,
+            "upper": 6.927791673660977e-14
+          }
+        },
+        "u_B": {
+          "mean": -0.0011966600970743724,
+          "sd": 0.4597616194074313,
+          "lower": -0.9085671534700597,
+          "median": -0.004094770038727074,
+          "upper": 0.9226000387016446,
+          "error": {
+            "mean": 7.112366251504909e-17,
+            "median": 4.409667075933044e-15,
+            "lower": 4.830580380144056e-13,
+            "upper": 4.756195437494171e-13
+          }
+        },
+        "theta_B": {
+          "mean": 8.472068941869022,
+          "sd": 0.1913910513929438,
+          "lower": 8.09556385171424,
+          "median": 8.472033156528788,
+          "upper": 8.848778618871226,
+          "error": {
+            "mean": 5.293543381412746e-13,
+            "median": 1.7763568394002505e-15,
+            "lower": 2.0513368781394092e-11,
+            "upper": 9.85345138815319e-12
+          }
+        },
+        "u_C": {
+          "mean": 0.23320778819573604,
+          "sd": 0.45212831776333307,
+          "lower": -0.6561304081738346,
+          "median": 0.22906379631662485,
+          "upper": 1.1454707462468536,
+          "error": {
+            "mean": 1.4155343563970746e-14,
+            "median": 4.06527589369432e-12,
+            "lower": 5.487832410722149e-13,
+            "upper": 4.665157149474908e-13
+          }
+        },
+        "theta_C": {
+          "mean": 8.706473390161845,
+          "sd": 0.09944203890520642,
+          "lower": 8.510486094857049,
+          "median": 8.706566601077943,
+          "upper": 8.90192783667223,
+          "error": {
+            "mean": 5.400124791776761e-13,
+            "median": 6.750155989720952e-14,
+            "lower": 2.809663612879376e-11,
+            "upper": 1.0549783269198088e-11
+          }
+        },
+        "sigma": {
+          "mean": 0.5897246279871862,
+          "sd": 0.062030390796920735,
+          "lower": 0.4832603508492731,
+          "median": 0.5844759688360956,
+          "upper": 0.7261472953289742,
+          "error": {
+            "mean": 1.1102230246251565e-16,
+            "median": 2.0995616093033576e-05,
+            "lower": 0.000630028964113738,
+            "upper": 0.00036534944113586487
+          }
+        },
+        "tau": {
+          "mean": 0.6993857885329071,
+          "sd": 0.2548009458750483,
+          "lower": 0.3883184046534638,
+          "median": 0.6434770097558845,
+          "upper": 1.3409314970173671,
+          "error": {
+            "mean": 3.3306690738754696e-16,
+            "median": 3.2912598620704614e-05,
+            "lower": 0.00040231971022702817,
+            "upper": 0.0008883630062699321
+          }
+        },
+        "icc": {
+          "mean": 0.5534467858866883,
+          "sd": 0.14687055032371932,
+          "lower": 0.28699983724771844,
+          "median": 0.5479769376367963,
+          "upper": 0.8455347349164652,
+          "error": {
+            "mean": 3.4083846855992306e-14,
+            "median": 0.0006193194937069713,
+            "lower": 1.1102230246251565e-16,
+            "upper": 1.1102230246251565e-16
+          }
+        }
+      },
+      "groupCovariance": [
+        [
+          0.13758532107735277,
+          0.004316011994902169,
+          0.001043943905017386
+        ],
+        [
+          0.004316011994902169,
+          0.03663053455329646,
+          0.0003715073910512956
+        ],
+        [
+          0.001043943905017386,
+          0.0003715073910512956,
+          0.009888719101624588
+        ]
+      ],
+      "labels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "n": [
+        2,
+        9,
+        35
+      ],
+      "boundaryMass": 3.944899727274397e-20,
+      "droppedCDFMass": 2.376947380381549e-13,
+      "size": 801,
+      "expanded": false,
+      "refinement": {
+        "size": 401,
+        "boundaryMass": 7.889799454548953e-20,
+        "droppedCDFMass": 6.078548615695485e-14
+      },
+      "expandedDomain": {
+        "size": 801,
+        "boundaryMass": 4.251903593314907e-23,
+        "droppedCDFMass": 1.6495119717974187e-13
+      }
+    }
+  },
+  "singleton": {
+    "default": {
+      "stats": {
+        "mu": {
+          "mean": 8.55937763564069,
+          "sd": 0.2556350615788414,
+          "lower": 8.040729083377634,
+          "median": 8.562779282896402,
+          "upper": 9.058291301319278,
+          "error": {
+            "mean": 5.346834086594754e-13,
+            "median": 1.9344525981068728e-12,
+            "lower": 2.7355895326763857e-13,
+            "upper": 2.5224267119483557e-13
+          }
+        },
+        "u_A": {
+          "mean": -0.0731222020101325,
+          "sd": 0.30818337231604925,
+          "lower": -0.7023393903607377,
+          "median": -0.06803935975668507,
+          "upper": 0.5271526607942173,
+          "error": {
+            "mean": 4.690692279041286e-15,
+            "median": 3.415323579503138e-14,
+            "lower": 3.282929483816588e-13,
+            "upper": 7.126410572766417e-12
+          }
+        },
+        "theta_A": {
+          "mean": 8.486255433630557,
+          "sd": 0.3190584649676748,
+          "lower": 7.84037417294382,
+          "median": 8.491320774247935,
+          "upper": 9.104111720391474,
+          "error": {
+            "mean": 5.222489107836736e-13,
+            "median": 3.707256723828323e-12,
+            "lower": 1.1901590823981678e-13,
+            "upper": 1.06332720406499e-11
+          }
+        },
+        "u_B": {
+          "mean": -0.07042177554219477,
+          "sd": 0.26115214282492716,
+          "lower": -0.5877470466058009,
+          "median": -0.07138743579108056,
+          "upper": 0.4533323791347599,
+          "error": {
+            "mean": 4.385380947269368e-15,
+            "median": 4.13874490234889e-11,
+            "lower": 2.828848266744899e-13,
+            "upper": 2.843281166065026e-13
+          }
+        },
+        "theta_B": {
+          "mean": 8.488955860098498,
+          "sd": 0.14720874014734808,
+          "lower": 8.199340896849705,
+          "median": 8.488945049625439,
+          "upper": 8.778630094674243,
+          "error": {
+            "mean": 5.240252676230739e-13,
+            "median": 1.7053025658242404e-12,
+            "lower": 1.0237144465463643e-11,
+            "upper": 2.4979129875646322e-11
+          }
+        },
+        "u_C": {
+          "mean": 0.1447374440419394,
+          "sd": 0.256874815869616,
+          "lower": -0.35437817136032623,
+          "median": 0.14035547881262025,
+          "upper": 0.6687645689668601,
+          "error": {
+            "mean": 8.965050923848139e-15,
+            "median": 3.8109321254253814e-11,
+            "lower": 1.815214645262131e-13,
+            "upper": 2.849942504212777e-13
+          }
+        },
+        "theta_C": {
+          "mean": 8.704115079682634,
+          "sd": 0.07811682093429535,
+          "lower": 8.550080819210732,
+          "median": 8.704216554111511,
+          "upper": 8.857570498028798,
+          "error": {
+            "mean": 5.293543381412746e-13,
+            "median": 2.6840751843337785e-12,
+            "lower": 1.3145040611561853e-13,
+            "upper": 1.6976642314148194e-11
+          }
+        },
+        "sigma": {
+          "mean": 0.46651639994913324,
+          "sd": 0.04936347714901855,
+          "lower": 0.3818649205673134,
+          "median": 0.4623154925772717,
+          "upper": 0.5752435436760085,
+          "error": {
+            "mean": 2.220446049250313e-16,
+            "median": 2.312144185556697e-05,
+            "lower": 0.0003389807533751843,
+            "upper": 0.0006017596752537768
+          }
+        },
+        "tau": {
+          "mean": 0.36539139970802426,
+          "sd": 0.13628113545488446,
+          "lower": 0.19953740500177172,
+          "median": 0.3352999865947795,
+          "upper": 0.7090236921532047,
+          "error": {
+            "mean": 1.1102230246251565e-16,
+            "median": 1.3258306596264369e-05,
+            "lower": 0.00013295472741714498,
+            "upper": 0.00035816566618018797
+          }
+        },
+        "icc": {
+          "mean": 0.36745580992153015,
+          "sd": 0.14714456590751918,
+          "lower": 0.14554232893696534,
+          "median": 0.34468162982610484,
+          "upper": 0.70889017256612,
+          "error": {
+            "mean": 2.275957200481571e-14,
+            "median": 0.0005644710339184345,
+            "lower": 0.0,
+            "upper": 1.1102230246251565e-16
+          }
+        }
+      },
+      "groupCovariance": [
+        [
+          0.10179830406752899,
+          0.006381362316901118,
+          0.0016799666049109874
+        ],
+        [
+          0.006381362316901118,
+          0.021670413175769454,
+          0.000517583775319963
+        ],
+        [
+          0.0016799666049109874,
+          0.000517583775319963,
+          0.006102237712880765
+        ]
+      ],
+      "labels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "n": [
+        1,
+        9,
+        35
+      ],
+      "boundaryMass": 4.545844080169527e-22,
+      "droppedCDFMass": 2.4299859463698735e-13,
+      "size": 801,
+      "expanded": false,
+      "refinement": {
+        "size": 401,
+        "boundaryMass": 9.091688160339261e-22,
+        "droppedCDFMass": 6.30159126451395e-14
+      },
+      "expandedDomain": {
+        "size": 801,
+        "boundaryMass": 4.899126116428268e-25,
+        "droppedCDFMass": 1.6608610938661557e-13
+      }
+    },
+    "wide": {
+      "stats": {
+        "mu": {
+          "mean": 8.542242491138623,
+          "sd": 0.4601040535335762,
+          "lower": 7.61773066368114,
+          "median": 8.545022264897002,
+          "upper": 9.451007350159294,
+          "error": {
+            "mean": 5.258016244624741e-13,
+            "median": 4.050093593832571e-13,
+            "lower": 4.867217739956686e-13,
+            "upper": 6.892264536872972e-13
+          }
+        },
+        "u_A": {
+          "mean": -0.10153021207672577,
+          "sd": 0.5323106539452852,
+          "lower": -1.1721039957143307,
+          "median": -0.09724384550001354,
+          "upper": 0.9447115438923186,
+          "error": {
+            "mean": 6.286637876939949e-15,
+            "median": 1.4876988529977098e-14,
+            "lower": 5.555556015224283e-13,
+            "upper": 1.7896795156957523e-13
+          }
+        },
+        "theta_A": {
+          "mean": 8.44071227906188,
+          "sd": 0.47612570963362005,
+          "lower": 7.4948404026401985,
+          "median": 8.443234221619878,
+          "upper": 9.372740878749271,
+          "error": {
+            "mean": 5.417888360170764e-13,
+            "median": 4.689582056016661e-13,
+            "lower": 1.63042912504352e-11,
+            "upper": 3.666400516522117e-12
+          }
+        },
+        "u_B": {
+          "mean": -0.06380113719248534,
+          "sd": 0.46849333781570557,
+          "lower": -0.9923158189341603,
+          "median": -0.06540862608911077,
+          "upper": 0.874222728531514,
+          "error": {
+            "mean": 3.858025010572419e-15,
+            "median": 1.201816424156732e-14,
+            "lower": 4.68292071786891e-13,
+            "upper": 7.169820293029261e-13
+          }
+        },
+        "theta_B": {
+          "mean": 8.478441353946131,
+          "sd": 0.1927813703415376,
+          "lower": 8.099321354351858,
+          "median": 8.478352506560508,
+          "upper": 8.85806707367565,
+          "error": {
+            "mean": 5.258016244624741e-13,
+            "median": 5.986322548778844e-13,
+            "lower": 2.0046186932631826e-11,
+            "upper": 1.2967404927621828e-13
+          }
+        },
+        "u_C": {
+          "mean": 0.16592896719016628,
+          "sd": 0.46219026744634556,
+          "lower": -0.7456449650408908,
+          "median": 0.16263012798363502,
+          "upper": 1.0960259329870246,
+          "error": {
+            "mean": 1.0519363158323358e-14,
+            "median": 4.2360837060329004e-12,
+            "lower": 4.718447854656915e-13,
+            "upper": 7.001066393286237e-13
+          }
+        },
+        "theta_C": {
+          "mean": 8.708171458328774,
+          "sd": 0.10005490109293878,
+          "lower": 8.511039027280079,
+          "median": 8.70823828702623,
+          "upper": 8.904921733519757,
+          "error": {
+            "mean": 5.542233338928781e-13,
+            "median": 1.7763568394002505e-15,
+            "lower": 1.4589218721994257e-11,
+            "upper": 1.9761969838327786e-11
+          }
+        },
+        "sigma": {
+          "mean": 0.5933019412555424,
+          "sd": 0.06293608821657186,
+          "lower": 0.48541723531323056,
+          "median": 0.5879315317903064,
+          "upper": 0.7319341511893805,
+          "error": {
+            "mean": 1.1102230246251565e-16,
+            "median": 2.9385901574308093e-05,
+            "lower": 0.00043254538534559517,
+            "upper": 0.0008130106107295809
+          }
+        },
+        "tau": {
+          "mean": 0.6977176330623236,
+          "sd": 0.2546850592383893,
+          "lower": 0.38699333923570617,
+          "median": 0.6417663786255615,
+          "upper": 1.3391501745962522,
+          "error": {
+            "mean": 4.440892098500626e-16,
+            "median": 4.0239690893617563e-05,
+            "lower": 0.0003200862851115427,
+            "upper": 0.000829924628743095
+          }
+        },
+        "icc": {
+          "mean": 0.5495882319868617,
+          "sd": 0.1472015412926599,
+          "lower": 0.28394020618429006,
+          "median": 0.5436386872370786,
+          "upper": 0.843235288603027,
+          "error": {
+            "mean": 3.419486915845482e-14,
+            "median": 4.440892098500626e-16,
+            "lower": 1.6653345369377348e-16,
+            "upper": 0.00033019033723047375
+          }
+        }
+      },
+      "groupCovariance": [
+        [
+          0.22669569137411827,
+          0.0069810630092490555,
+          0.0018474432300479293
+        ],
+        [
+          0.0069810630092490555,
+          0.03716465675076108,
+          0.0004046345751334002
+        ],
+        [
+          0.0018474432300479293,
+          0.0004046345751334002,
+          0.010010983232717763
+        ]
+      ],
+      "labels": [
+        "A",
+        "B",
+        "C"
+      ],
+      "n": [
+        1,
+        9,
+        35
+      ],
+      "boundaryMass": 3.931275232582755e-20,
+      "droppedCDFMass": 2.4201171124436066e-13,
+      "size": 801,
+      "expanded": false,
+      "refinement": {
+        "size": 401,
+        "boundaryMass": 7.862550465165697e-20,
+        "droppedCDFMass": 6.133958683935989e-14
+      },
+      "expandedDomain": {
+        "size": 801,
+        "boundaryMass": 4.2372195366342244e-23,
+        "droppedCDFMass": 1.6346416411142212e-13
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # Bayes in your browser
 
-A small educational People Analytics lab, built with HTML, CSS and JavaScript. It fits four model types on the fictional IBM attrition dataset, samples posterior draws locally, and presents distributions, credible intervals, traces and numerical tables.
+A small educational People Analytics lab, built with HTML, CSS and JavaScript. It fits six model types on the fictional IBM attrition dataset, samples posterior draws locally, and presents distributions, credible intervals, traces and numerical tables.
 
 [Open the site](https://lstehlik2809.github.io/bayesian-people-analytics/) · [LinkedIn draft](LINKEDIN_POST.txt) · [Design and metric definitions](DESIGN.md) · [Data provenance and terms](data/SOURCE.md)
 
@@ -14,7 +14,7 @@ npm run dev
 
 Open `http://127.0.0.1:4173`. Optional server arguments: `npm run dev -- --host 127.0.0.1 --port 8080`. Serve the directory over HTTP; opening `index.html` as a `file:` URL will not provide normal browser module/worker access.
 
-All four analyses run inside a module Web Worker. Controls, navigation, theme changes and cancellation remain on the main thread. The bundled dataset loads from this same static site; there are no analytics or remote inference requests.
+All six analyses run inside a module Web Worker. Controls, navigation, theme changes and cancellation remain on the main thread. The bundled dataset loads from this same static site; there are no analytics or remote inference requests.
 
 ## Analyses
 
@@ -24,8 +24,12 @@ All four analyses run inside a module Web Worker. Controls, navigation, theme ch
 | Compare income groups | How do two groups' geometric mean monthly incomes compare? | Independent draws from the exact Normal–Inverse-Gamma posterior |
 | Model income | How is log monthly income associated with 1–3 selected predictors? | Independent draws from the exact Normal–Inverse-Gamma posterior |
 | Model attrition | How is Attrition=Yes associated with 1–3 selected predictors, conditional on the others? | Preconditioned Metropolis-adjusted Langevin sampling (MALA) |
+| Ordinal regression | How are ordered satisfaction or work-life-balance categories associated with selected predictors? | MALA for a proportional-odds cumulative-logit model |
+| Hierarchical income | How do job roles or departments compare after partial pooling? | Blocked Gibbs sampling of a typical-group baseline, group effects and variance components |
 
 These are selected model families inspired by Andrew Marritt's [Bayesian Thinking for People Analytics](https://bayesian-thinking.andrewmarritt.ch/), rather than a general-purpose facility for arbitrary model specifications. They use different data and an independent implementation. The book's examples use R, brms and Stan/HMC. Relevant chapters are [4](https://bayesian-thinking.andrewmarritt.ch/chapters/04-bayes-theorem.html), [5](https://bayesian-thinking.andrewmarritt.ch/chapters/05-posteriors-priors-credible-intervals.html), [6](https://bayesian-thinking.andrewmarritt.ch/chapters/06-bayesian-regression.html), [7](https://bayesian-thinking.andrewmarritt.ch/chapters/07-groups-and-categories.html), [9](https://bayesian-thinking.andrewmarritt.ch/chapters/09-logistic-regression.html) and [11](https://bayesian-thinking.andrewmarritt.ch/chapters/11-mcmc-under-the-hood.html).
+
+The new analyses also connect to [multilevel models (8)](https://bayesian-thinking.andrewmarritt.ch/chapters/08-multilevel-models.html), [hierarchical pay and variance (16)](https://bayesian-thinking.andrewmarritt.ch/chapters/16-hierarchical-pay-variance.html) and [Likert and survey data (18)](https://bayesian-thinking.andrewmarritt.ch/chapters/18-likert-survey-analysis.html).
 
 ## Data and interpretation
 
@@ -69,9 +73,43 @@ MALA uses an analytic log-posterior and gradient. A Newton search finds a poster
 
 Odds ratios exp(βⱼ) are conditional odds multipliers, not probability multipliers. The reference-profile probability is logistic(β₀). Its interpretation depends on the chosen predictor coding described above.
 
+### Ordinal regression
+
+Choose JobSatisfaction, EnvironmentSatisfaction or WorkLifeBalance, each coded as four ordered categories. The model keeps category positions 1–4 even if a selected scope contains no observations in a category. It does not assume equal distances between the response labels.
+
+For k=1,2,3, P(Yᵢ≤k)=logistic(cₖ−xᵢᵀβ). There is no separate intercept, which would be redundant with the thresholds. Sampled free parameters are the first threshold c₁, two log gaps g₂ and g₃, and the slopes. The ordering is c₂=c₁+exp(g₂), c₃=c₂+exp(g₃).
+
+Independent priors on those **free** parameters are:
+
+| Parameter | Default | Alternative |
+| --- | --- | --- |
+| c₁ | Normal(−1.5, 1.5²) | Normal(−1.5, 2.5²) |
+| Each log gap | Normal(log(1.5), 0.5²) | Normal(log(1.5), 0.9²) |
+| Each slope | Normal(0, 1²) | Normal(0, 2.5²) |
+
+Because these priors are defined directly on the sampled log gaps, the target density does not acquire an extra threshold-transformation Jacobian. The analytic log posterior/gradient uses stable category log probabilities. MALA uses a fixed, regularized inverse Hessian at the independently optimized mode; a numerical Hessian affects the proposal metric rather than the target. Its full forward/reverse proposal correction and warmup-only step adaptation follow the same principles as the binary model.
+
+A positive slope increases the odds of being **above** each cutoff. Proportional odds assumes that this slope is the same at every cutoff. The overview displays all four category probabilities and their intervals at the explicitly defined reference profile, with probabilities summing to one. Observed category counts describe the included data; they are not a posterior predictive check against that single profile.
+
+### Hierarchical income and partial pooling
+
+Select JobRole or Department as the grouping field; department scope applies first. At least two observed groups are required. On the natural-log income scale:
+
+- yᵢg ∼ Normal(μ+u_g,σ²).
+- u_g ∼ Normal(0,τ²).
+- μ ∼ Normal(log(5000),s_μ²), with s_μ=2 by default or 4 for the alternative.
+- σ² ∼ InverseGamma(2,b_σ), with b_σ=1 or 4.
+- τ² ∼ InverseGamma(2,b_τ), with b_τ=0.25 or 1.
+
+The three hyperpriors are independent. The model assumes exchangeable group deviations and a common within-group residual variance. μ describes a **typical-group baseline**, not an employee-weighted company average. Between-group variance is often sensitive to its prior when there are few groups; the interface states this explicitly.
+
+The Gibbs sampler draws the joint (μ,u) block by first drawing μ conditional on σ²,τ² and the data with u integrated out. Its precision is s_μ⁻²+Σ_g(τ²+σ²/n_g)⁻¹ and its mean uses the corresponding prior/group-mean weights. Then each u_g is drawn conditional on that new μ and the variances. Its variance is (n_g/σ²+1/τ²)⁻¹ and mean is that variance times n_g(ȳ_g−μ)/σ². The residual variance update is InverseGamma(2+n/2,b_σ+Σᵢg(yᵢg−μ−u_g)²/2); the group variance update is InverseGamma(2+G/2,b_τ+Σ_g u_g²/2). These are genuine joint-posterior sweeps, with discarded warmup and no tuning adaptation.
+
+The partial-pooling chart puts each group's posterior geometric-income median and interval on the same scale as its observed unpooled geometric mean, with the group size shown. Natural-income summaries use medians by presentation choice. This posterior is not NIG; the previous NIG exponential-moment caveat must not be applied indiscriminately here. In particular, the independent Normal prior on μ gives exp(μ) finite moments. The optional variance share/ICC is τ²/(τ²+σ²), describing modeled **log-income** variation rather than a causal contribution.
+
 ## Summaries and diagnostics
 
-Four separate deterministic random streams are derived from the supplied unsigned 32-bit seed. Repeating the same rows, configuration and seed reproduces draws. Exact conjugate models require no MCMC warmup. Logistic settings include discarded warmup and retained draws per chain. Progress messages describe actual iterations; cancelling terminates the Worker. Changing any model-setting input invalidates results, and generation IDs prevent stale responses from replacing a new fit.
+Four separate deterministic random streams are derived from the supplied unsigned 32-bit seed. Repeating the same rows, configuration and seed reproduces draws. Exact conjugate models require no MCMC warmup. Logistic, ordinal and hierarchical settings include discarded warmup and retained draws per chain. Progress messages describe actual iterations/sweeps; cancelling terminates the Worker. Changing any model-setting input invalidates results, and generation IDs prevent stale responses from replacing a new fit.
 
 Charts and tables use the retained draws. Intervals are empirical 2.5th–97.5th percentiles, conditional on the model, data and priors. They describe parameters rather than the spread of employees or future individual outcomes. Directional probabilities count retained draws above the stated reference (0 for log coefficients; 1 for multipliers).
 
@@ -98,10 +136,12 @@ python tests/make_references.py
 
 Python is not needed to use the site or run the checked-in Node tests. Browser checks cover all analyses, exports, progress/cancellation, invalidation, keyboard interaction, light/dark themes and narrow layouts. Browser screenshots and run logs are local QA artifacts excluded from Git. Agent inspection is not a representative-user comprehension study.
 
+`tests/advanced.test.mjs` adds independent ordinal and hierarchical checks, including three-predictor gradient tests against a separately coded target, absent response categories, singleton groups and covariance between group locations. `tests/make_advanced_references.py` generates its checked-in fixtures: ordinal references use full-support multivariate-t importance integration with four independently scrambled Sobol replicates at 2¹⁷ and 2¹⁸ points and proposal scales 1 and 1.5; hierarchical references integrate μ and u analytically before 401/801-point two-dimensional log-variance quadrature, with expanded-domain and boundary-mass checks. Per-functional uncertainty/refinement errors are retained, including for quantiles. None calls the JavaScript engine to construct its target or summaries.
+
 ## GitHub Pages
 
-The repository root is the static site. `.nojekyll` allows direct serving without a Jekyll build. Publish the `main` branch root through GitHub Pages; all application assets, Worker imports and data requests use relative paths that support a project subdirectory. Deployment verification should include a completed hosted logistic fit, not just an HTTP check of the landing page.
+The repository root is the static site. `.nojekyll` allows direct serving without a Jekyll build. Publish the `main` branch root through GitHub Pages; all application assets, Worker imports and data requests use relative paths that support a project subdirectory. Deployment verification should include completed hosted logistic, ordinal and hierarchical fits, not just an HTTP check of the landing page.
 
 ## Files and licenses
 
-`engine.js` contains the pure model/sampler API; `worker.js` runs it away from the UI; `app.js` owns interaction and chart rendering. `scripts/serve.mjs` is a local static server. The app's code is MIT licensed. The IBM data retains its [separate Open Data Commons terms](data/SOURCE.md).
+`engine.js` contains the model/sampler API, with ordinal and hierarchical components in `advanced.js`; `worker.js` runs it away from the UI; `app.js` owns interaction and chart rendering. `scripts/serve.mjs` is a local static server. The app's code is MIT licensed. The IBM data retains its [separate Open Data Commons terms](data/SOURCE.md).

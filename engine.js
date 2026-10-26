@@ -1,4 +1,6 @@
 /* Dependency-free posterior sampling. Priors and transformations are part of the public model. */
+import { buildOrdinal, ordinalLogDensity, ordinalValues, ordinalGeometry, buildHierarchical, initialHierarchy, hierarchySweep } from './advanced.js';
+export { ordinalLogDensity, ordinalProbabilities, ORDINAL_OUTCOMES, HIERARCHICAL_GROUPS } from './advanced.js';
 export const CONTINUOUS = ['Age', 'YearsAtCompany', 'DistanceFromHome', 'TotalWorkingYears'];
 export const PREDICTORS = [...CONTINUOUS, 'OverTime'];
 export const GROUPS = ['Gender', 'OverTime', 'Department', 'BusinessTravel', 'Attrition'];
@@ -41,7 +43,7 @@ function yesNo(value, field) { if (value !== 'Yes' && value !== 'No') throw new 
 export function buildModel(rows, config = {}) {
   if (!Array.isArray(rows) || !rows.length) throw new Error('No employees are available for this selection.');
   const type = config.type ?? 'proportion', priorName = config.prior ?? 'default';
-  if (!['proportion', 'compare', 'linear', 'logistic'].includes(type)) throw new Error('Choose a supported analysis.');
+  if (!['proportion', 'compare', 'linear', 'logistic', 'ordinal', 'hierarchical'].includes(type)) throw new Error('Choose a supported analysis.');
   if (!['default', 'wide'].includes(priorName)) throw new Error('Choose a supported prior.');
   const department = config.department ?? 'All';
   if (!['All', 'Human Resources', 'Research & Development', 'Sales'].includes(department)) throw new Error('Choose a supported department.');
@@ -49,6 +51,7 @@ export function buildModel(rows, config = {}) {
   if (!selected.length) throw new Error('No employees are available for this department.');
   const model = { type, config: { ...config, type, prior: priorName, department }, n: selected.length, parameters: [], scales: [], prior: {}, observed: {}, sampler: '' };
   const wide = priorName === 'wide';
+  if (type === 'hierarchical') return buildHierarchical(selected, model, wide);
   if (type === 'proportion') {
     const groupBy = config.groupBy ?? 'Overall';
     if (groupBy !== 'Overall' && !GROUPS.includes(groupBy)) throw new Error('Choose a supported grouping field.');
@@ -83,6 +86,7 @@ export function buildModel(rows, config = {}) {
       return { field, mean: binary ? 0 : center, sd: binary ? 1 : sd, sampleMean: center, sampleSD: sd, binary, change: binary ? 'No → Yes' : `+1 SD (${sd.toPrecision(4)} ${field === 'Age' || field.includes('Years') ? 'years' : 'distance units'})` };
     });
     X = selected.map(r => [1, ...model.scales.map(s => ((s.binary ? yesNo(r[s.field], s.field) : r[s.field]) - s.mean) / s.sd)]);
+    if (type === 'ordinal') return buildOrdinal(selected, model, wide, X.map(x => x.slice(1)));
     model.parameters = [parameter('intercept', 'Intercept', type === 'linear' ? 'log income units/month' : 'log odds', { transform: 'beta[0]', null: null })];
     model.scales.forEach((s, i) => model.parameters.push(parameter(`beta_${s.field}`, s.field, type === 'linear' ? `log multiplier; ${s.change}` : `log odds; ${s.change}`, { transform: `beta[${i + 1}]`, null: 0 })));
     if (type === 'linear') model.parameters.push(parameter('geomean_profile', 'Geometric mean at reference profile', 'income units/month', { transform: 'exp(beta[0])', family: 'income' }));
@@ -147,31 +151,34 @@ export function validateSettings(settings = {}) {
   return s;
 }
 export async function runChains(model, settings = {}, onProgress = () => {}) {
-  const requested = validateSettings(settings), s = { ...requested, warmup: model.type === 'logistic' ? requested.warmup : 0 }, chains = [], chainInfo = [], total = s.warmup + s.draws;
-  const geometry = model.type === 'logistic' ? logisticGeometry(model) : null;
+  const requested = validateSettings(settings), s = { ...requested, warmup: ['logistic', 'ordinal', 'hierarchical'].includes(model.type) ? requested.warmup : 0 }, chains = [], chainInfo = [], total = s.warmup + s.draws;
+  const geometry = model.type === 'logistic' ? logisticGeometry(model) : model.type === 'ordinal' ? ordinalGeometry(model) : null;
+  const density = model.type === 'ordinal' ? ordinalLogDensity : logisticState;
   const L = geometry ? cholesky(geometry.C) : model.posterior ? cholesky(model.posterior.covariance) : null;
   for (let c = 0; c < 4; c++) {
     const chainSeed = ((s.seed >>> 0) + Math.imul(c + 1, 0x9e3779b9)) >>> 0, rng = createRng(chainSeed), draws = [];
     const initialZ = geometry ? L.map(() => rng.normal()) : null;
     let beta = geometry ? geometry.beta.map((v, j) => v + 2 * dot(L[j], initialZ)) : null;
-    let state = geometry ? logisticState(model, beta) : null, logStep = Math.log(1), accepted = 0;
+    let state = geometry ? density(model, beta) : null, logStep = Math.log(1), accepted = 0;
+    let hierarchyState = model.type === 'hierarchical' ? initialHierarchy(model, rng) : null;
     for (let i = 0; i < total; i++) {
       let draw;
       if (model.type === 'proportion') draw = model.groups.map(g => { const a = rng.gamma(g.alpha), b = rng.gamma(g.beta); return a / (a + b); });
+      else if (model.type === 'hierarchical') { const next = hierarchySweep(model, hierarchyState, rng); hierarchyState = next.state; draw = next.draw; }
       else if (model.posterior) {
         const sigma2 = model.posterior.b / rng.gamma(model.posterior.a), z = L.map(() => rng.normal());
         const b = model.posterior.mean.map((m, j) => m + Math.sqrt(sigma2) * dot(L[j], z)); draw = valuesFor(model, b, Math.sqrt(sigma2));
       } else {
         const step = Math.exp(logStep), step2 = step * step, drift = mv(geometry.C, state.grad), z = L.map(() => rng.normal());
         const proposal = beta.map((v, j) => v + .5 * step2 * drift[j] + step * dot(L[j], z));
-        const next = logisticState(model, proposal), nextDrift = mv(geometry.C, next.grad);
+        const next = density(model, proposal), nextDrift = mv(geometry.C, next.grad);
         const forward = proposal.map((v, j) => v - beta[j] - .5 * step2 * drift[j]);
         const reverse = beta.map((v, j) => v - proposal[j] - .5 * step2 * nextDrift[j]);
         const logRatio = next.logp - state.logp + .5 / step2 * (quadratic(forward, geometry.H) - quadratic(reverse, geometry.H));
         const probability = Number.isFinite(logRatio) ? Math.exp(Math.min(0, logRatio)) : 0;
         if (rng.uniform() < probability) { beta = proposal; state = next; if (i >= s.warmup) accepted++; }
         if (i < s.warmup) logStep = Math.max(-5, Math.min(1.5, logStep + Math.min(.05, 1 / Math.sqrt(i + 10)) * (probability - .574)));
-        draw = valuesFor(model, beta);
+        draw = model.type === 'ordinal' ? ordinalValues(model, beta) : valuesFor(model, beta);
       }
       if (i >= s.warmup) draws.push(draw);
       if ((i + 1) % 100 === 0 || i + 1 === s.warmup || i + 1 === total) {
@@ -179,11 +186,11 @@ export async function runChains(model, settings = {}, onProgress = () => {}) {
         await new Promise(resolve => setTimeout(resolve, 0));
       }
     }
-    chains.push(draws); chainInfo.push({ seed: chainSeed, acceptance: geometry ? accepted / s.draws : 1, stepSize: geometry ? Math.exp(logStep) : null });
+    chains.push(draws); chainInfo.push({ seed: chainSeed, acceptance: geometry ? accepted / s.draws : model.type === 'hierarchical' ? null : 1, stepSize: geometry ? Math.exp(logStep) : null });
   }
   const summary = summarize(chains, model.parameters);
   const warnings = summary.filter(r => r.warning).map(r => `${r.label}: ${r.warning}`);
-  return { version: 1, config: model.config, requestedSettings: requested, settings: s, n: model.n, observed: model.observed, scales: model.scales, prior: model.prior, sampler: model.sampler, parameters: model.parameters, chains, chainInfo, summary, warnings, interval: '95% equal-tailed credible interval (empirical 2.5th–97.5th percentiles)', diagnosticsMethod: 'Classical split R-hat; approximate initial-positive-pair autocorrelation ESS, not rank-normalized. Thresholds: R-hat ≤ 1.01 and ESS ≥ 400. Passing is not proof of convergence or model adequacy.' };
+  return { version: 1, config: model.config, requestedSettings: requested, settings: s, n: model.n, observed: model.observed, scales: model.scales, prior: model.prior, sampler: model.sampler, parameters: model.parameters, freeParameterIds: model.freeParameterIds, profile: model.profile, modelNotes: model.modelNotes || [], chains, chainInfo, summary, warnings, interval: '95% equal-tailed credible interval (empirical 2.5th–97.5th percentiles)', diagnosticsMethod: 'Classical split R-hat; approximate initial-positive-pair autocorrelation ESS, not rank-normalized. Thresholds: R-hat ≤ 1.01 and ESS ≥ 400. Passing is not proof of convergence or model adequacy.' };
 }
 export function diagnostics(chains) {
   if (!Array.isArray(chains) || chains.length < 2 || chains.some(c => !Array.isArray(c) || c.length < 4 || c.some(v => !Number.isFinite(v)))) return { rhat: null, ess: null, warning: 'Diagnostics undefined: insufficient or nonfinite draws.' };
@@ -203,6 +210,6 @@ export function summarize(chains, parameters) {
   return parameters.map((p, j) => {
     const series = chains.map(chain => chain.map(draw => draw[j])), all = series.flat(), sorted = [...all].sort((a, b) => a - b), d = diagnostics(series);
     const avg = mean(all), sd = Math.sqrt(all.reduce((s, v) => s + (v - avg) ** 2, 0) / (all.length - 1));
-    return { ...p, mean: p.undefinedMoments ? null : avg, median: quantile(sorted, .5), low: quantile(sorted, .025), high: quantile(sorted, .975), sd: p.undefinedMoments ? null : sd, ...d, mcse: p.undefinedMoments ? null : d.ess ? sd / Math.sqrt(d.ess) : null, probabilityAboveNull: p.null == null ? null : all.filter(v => v > p.null).length / all.length };
+    return { ...p, mean: p.undefinedMoments || p.medianOnly ? null : avg, median: quantile(sorted, .5), low: quantile(sorted, .025), high: quantile(sorted, .975), sd: p.undefinedMoments || p.medianOnly ? null : sd, ...d, mcse: p.undefinedMoments || p.medianOnly ? null : d.ess ? sd / Math.sqrt(d.ess) : null, probabilityAboveNull: p.null == null ? null : all.filter(v => v > p.null).length / all.length };
   });
 }

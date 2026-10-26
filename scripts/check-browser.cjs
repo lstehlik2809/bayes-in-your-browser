@@ -26,17 +26,18 @@ const assert=require('node:assert/strict');
 
  // Tab keyboard semantics and visible focus.
  await page.locator('#tab-proportion').focus();await page.keyboard.press('End');
- assert.equal(await page.locator('#tab-logistic').getAttribute('aria-selected'),'true');
+ assert.equal(await page.locator('#tab-hierarchical').getAttribute('aria-selected'),'true');
  await page.keyboard.press('ArrowLeft');
- assert.equal(await page.locator('#tab-linear').getAttribute('aria-selected'),'true');
- assert.notEqual(await page.locator('#tab-linear').evaluate(e=>getComputedStyle(e).outlineStyle),'none');
+ assert.equal(await page.locator('#tab-ordinal').getAttribute('aria-selected'),'true');
+ assert.notEqual(await page.locator('#tab-ordinal').evaluate(e=>getComputedStyle(e).outlineStyle),'none');
 
- const types=hosted?['logistic']:['proportion','compare','linear','logistic'];
+ const types=hosted?['logistic','ordinal','hierarchical']:['proportion','compare','linear','logistic','ordinal','hierarchical'];
  for(const type of types){
   await page.locator('#tab-'+type).click();
   if(type==='proportion')await page.locator('#group-by').selectOption('Department');
   if(type==='compare')await page.locator('#group-by').selectOption('Gender');
-  if(['linear','logistic'].includes(type)){
+  if(type==='hierarchical')await page.locator('#group-by').selectOption('JobRole');
+  if(['linear','logistic','ordinal'].includes(type)){
    for(const box of await page.locator('input[name=predictor]').all())await box.uncheck();
    for(const name of type==='linear'?['Age','YearsAtCompany','TotalWorkingYears']:['Age','YearsAtCompany','OverTime'])await page.locator(`input[value="${name}"]`).check();
   }
@@ -44,7 +45,7 @@ const assert=require('node:assert/strict');
   await page.locator('#run-button').click();
   await page.locator('#results').waitFor({state:'visible',timeout:120000});
   assert.equal(await page.locator('#fit-state').getAttribute('data-state'),'completed');
-  assert.equal(await page.locator('#results svg').count(),3);
+  assert.equal(await page.locator('#histogram svg, #interval-chart svg, #trace-chart svg').count(),3);
   assert.ok(await page.locator('#summary-body tr').count()>0);
   assert.equal(await page.locator('#summary-body th small').first().evaluate(e=>getComputedStyle(e).display),'block','summary units retain their own line; full stylesheet parsed');
   const downloadEvent=page.waitForEvent('download');await page.locator('#export-button').click();
@@ -54,7 +55,7 @@ const assert=require('node:assert/strict');
   assert.equal(result.settings.chains,4);assert.equal(result.settings.draws,1500);
   assert.equal(new Set(result.chainInfo.map(c=>c.seed)).size,4);
   assert.ok(result.summary.every(s=>Number.isFinite(s.median)&&Number.isFinite(s.low)&&Number.isFinite(s.high)));
-  if(type!=='logistic')assert.equal(result.settings.warmup,0);
+  if(!['logistic','ordinal','hierarchical'].includes(type))assert.equal(result.settings.warmup,0);
   if(['linear','compare'].includes(type))assert.ok(result.summary.filter(s=>s.family==='income'||s.family==='ratio').every(s=>s.mean===null&&s.sd===null&&s.mcse===null));
   if(['linear','logistic'].includes(type)){
    assert.equal(result.summary.find(s=>s.id==='intercept').probabilityAboveNull,null,'intercept has no directional null');
@@ -66,6 +67,41 @@ const assert=require('node:assert/strict');
   fits.push({type,milliseconds:Date.now()-started,n:result.n,parameters:result.summary.length,warnings:result.warnings,seed:result.settings.seed});
   await page.locator('#histogram').scrollIntoViewIfNeeded();await screenshot(type+'-charts-light');
   await checkOverflow();
+  if(['ordinal','hierarchical'].includes(type)){
+   assert.equal(await page.locator('#model-overview').isVisible(),true);
+   assert.equal(await page.locator('#overview-chart svg').count(),1);
+   if(type==='ordinal'){
+    assert.equal(result.config.outcome,'JobSatisfaction');
+    assert.equal(result.observed.categories.reduce((s,c)=>s+c.n,0),1470);
+    assert.match(await page.locator('#overview-note').textContent(),/not a predictive check/);
+   }else{
+    assert.equal(result.observed.groups.reduce((s,g)=>s+g.n,0),1470);
+    assert.equal(result.observed.groups.length,9);
+    assert.match(await page.locator('#histogram').textContent(),/Between-group share/);
+   }
+   await page.locator('#overview-chart').scrollIntoViewIfNeeded();await screenshot(type+'-overview-light');
+   await page.locator('#theme-toggle').click();await page.locator('#overview-chart').scrollIntoViewIfNeeded();await screenshot(type+'-overview-dark');
+   await page.setViewportSize({width:360,height:900});await page.waitForTimeout(250);
+   await checkOverflow();await page.locator('#overview-chart').scrollIntoViewIfNeeded();await screenshot(type+'-overview-mobile');
+   await page.setViewportSize({width:1440,height:1000});await page.waitForTimeout(250);
+   await page.locator('#theme-toggle').click();
+   if(type==='ordinal'){
+    await page.locator('#ordinal-outcome').selectOption('WorkLifeBalance');
+    assert.equal(await page.locator('#results').isVisible(),false);
+    assert.equal(await page.locator('#export-button').isDisabled(),true);
+    await page.locator('#run-button').click();await page.locator('#results').waitFor({state:'visible',timeout:120000});
+    assert.match(await page.locator('#result-context').textContent(),/WorkLifeBalance/);
+   }else{
+    await page.locator('#group-by').selectOption('Department');assert.equal(await page.locator('#results').isVisible(),false);
+    await page.locator('#run-button').click();await page.locator('#results').waitFor({state:'visible',timeout:120000});
+    assert.match(await page.locator('#model-notes').textContent(),/Only 3 groups/);
+    await page.locator('#department').selectOption('Human Resources');await page.locator('#run-button').click();
+    assert.equal(await page.locator('#fit-state').getAttribute('data-state'),'error');
+    assert.match(await page.locator('#state-message').textContent(),/at least two/);
+    await page.locator('#department').selectOption('All');await page.locator('#group-by').selectOption('JobRole');
+    await page.locator('#run-button').click();await page.locator('#results').waitFor({state:'visible',timeout:120000});
+   }
+  }
  }
 
  await page.locator('#theme-toggle').click();
@@ -111,7 +147,7 @@ const assert=require('node:assert/strict');
  await page.locator('#lab').scrollIntoViewIfNeeded();await screenshot('mobile-controls');
  assert.deepEqual(errors,[],'no browser JavaScript errors');
  assert.deepEqual(failedRequests,[],'no failing asset or data requests');
- const report={base,hosted,fits,errors,failedRequests,checks:['light default','four tabs / hosted logistic','JSON exports','posterior charts and tables','keyboard tab navigation and visible focus','dark switch','360px reflow','scope invalidation','live progress','theme while sampling','cancel <1s','running-setting invalidation','same-group error']};
+ const report={base,hosted,fits,errors,failedRequests,checks:['light default',hosted?'hosted logistic/ordinal/hierarchical':'all six analysis tabs','JSON exports','posterior charts and tables','keyboard tab navigation and visible focus','dark switch','360px reflow','scope invalidation','ordinal outcome invalidation','hierarchical grouping invalidation','single-group hierarchical error','live progress','theme while sampling','cancel <1s','running-setting invalidation','same-group error']};
  await fs.writeFile(path.join(folder,'report.json'),JSON.stringify(report,null,2));
  console.log(JSON.stringify(report,null,2));await browser.close();
 })().catch(e=>{console.error(e);process.exit(1);});
