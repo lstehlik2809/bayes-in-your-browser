@@ -83,7 +83,7 @@ export function buildModel(rows, config = {}) {
       return { field, mean: binary ? 0 : center, sd: binary ? 1 : sd, sampleMean: center, sampleSD: sd, binary, change: binary ? 'No → Yes' : `+1 SD (${sd.toPrecision(4)} ${field === 'Age' || field.includes('Years') ? 'years' : 'distance units'})` };
     });
     X = selected.map(r => [1, ...model.scales.map(s => ((s.binary ? yesNo(r[s.field], s.field) : r[s.field]) - s.mean) / s.sd)]);
-    model.parameters = [parameter('intercept', 'Intercept', type === 'linear' ? 'log income units/month' : 'log odds', { transform: 'beta[0]', null: 0 })];
+    model.parameters = [parameter('intercept', 'Intercept', type === 'linear' ? 'log income units/month' : 'log odds', { transform: 'beta[0]', null: null })];
     model.scales.forEach((s, i) => model.parameters.push(parameter(`beta_${s.field}`, s.field, type === 'linear' ? `log multiplier; ${s.change}` : `log odds; ${s.change}`, { transform: `beta[${i + 1}]`, null: 0 })));
     if (type === 'linear') model.parameters.push(parameter('geomean_profile', 'Geometric mean at reference profile', 'income units/month', { transform: 'exp(beta[0])', family: 'income' }));
     else model.parameters.push(parameter('p_profile', 'Attrition probability at reference profile', 'probability', { transform: 'logistic(beta[0])', family: 'probability' }));

@@ -56,6 +56,13 @@ const assert=require('node:assert/strict');
   assert.ok(result.summary.every(s=>Number.isFinite(s.median)&&Number.isFinite(s.low)&&Number.isFinite(s.high)));
   if(type!=='logistic')assert.equal(result.settings.warmup,0);
   if(['linear','compare'].includes(type))assert.ok(result.summary.filter(s=>s.family==='income'||s.family==='ratio').every(s=>s.mean===null&&s.sd===null&&s.mcse===null));
+  if(['linear','logistic'].includes(type)){
+   assert.equal(result.summary.find(s=>s.id==='intercept').probabilityAboveNull,null,'intercept has no directional null');
+   await page.locator('#parameter-select').selectOption('intercept');
+   assert.doesNotMatch(await page.locator('#interpretation').textContent(),/no-change|retained draws are above/);
+   assert.equal(await page.locator('#summary-body tr').first().locator('td').nth(3).textContent(),'—');
+   await page.locator('#parameter-select').selectOption('multiplier_Age');
+  }
   fits.push({type,milliseconds:Date.now()-started,n:result.n,parameters:result.summary.length,warnings:result.warnings,seed:result.settings.seed});
   await page.locator('#histogram').scrollIntoViewIfNeeded();await screenshot(type+'-charts-light');
   await checkOverflow();
