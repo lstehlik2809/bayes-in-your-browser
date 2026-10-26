@@ -1,0 +1,7 @@
+{
+  "name": "bayes-in-your-browser",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "dev": "node scripts/serve.mjs", "test": "node --test", "check": "node --check engine.js && node --check app.js && node --check worker.js" }
+}

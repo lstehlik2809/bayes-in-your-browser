@@ -1,0 +1,45 @@
+# Design contract
+
+## Reader and task
+
+A People Analytics practitioner or curious non-programmer opens this educational site to ask a question about the fictional IBM workforce, choose an appropriate analysis, fit it locally, then inspect the estimate, uncertainty, and sampling diagnostics. Results can suggest further investigation; they are not intervention recommendations.
+
+The reading journey is: introductory explanation → choose an analysis → choose relevant fields and scope → run and observe progress → inspect posterior and comparison → examine exact results and diagnostics → export if useful.
+
+Primary viewport: ordinary desktop browser; also support narrow screens and enlarged text through reflow. Light mode is the initial default; a deliberate theme choice persists locally. No account, backend, tracking, remote model API, or runtime CDN dependency is needed.
+
+## Measures and interpretation
+
+| Measure | Definition and scope | Unit / interpretation |
+| --- | --- | --- |
+| Employees | Number of included employee rows after department and analysis-specific group selection | Count; no missing-data replacement |
+| Observed attrition proportion | Count of Attrition=Yes divided by included rows | Percent; no annual time window is documented |
+| Posterior attrition proportion | Draws for the Bernoulli probability under the stated prior and included data | Percent; parameter uncertainty, not a forecast of individual outcomes |
+| Group income comparison | Gaussian model of log(MonthlyIncome) in the two chosen groups | Exponentiated group means are geometric means; their ratio is not an arithmetic mean difference |
+| Income regression | Gaussian model of log(MonthlyIncome), conditional on the chosen predictors | Exponentiated slope is a multiplier for the stated predictor change; no currency is assumed |
+| Attrition regression | Bernoulli model with a logistic link | Coefficients are conditional log odds, odds ratios are not risk ratios; any displayed probabilities must state the predictor profile |
+| Posterior interval | Empirical 2.5th and 97.5th quantiles of retained draws | 95% equal-tailed credible interval, conditional on model/prior/data |
+| Direction probability | Fraction of retained draws above the stated null (0 for a difference/log coefficient, 1 for a ratio) | Model-conditional posterior probability, not a p-value |
+| Sampling diagnostics | Chain agreement and effective information after warmup | Warnings limit interpretation; a passing check does not establish model adequacy |
+
+The dataset is a fictional cross-sectional demonstration. Each row is one employee. No join or aggregation changes the observational unit. Employee IDs, constants, and ordinal codes are excluded from continuous predictor choices. Missing, invalid, or insufficient inputs must produce an explicit state rather than a numerical zero.
+
+## Visual decisions
+
+- Use posterior histograms for distribution shape and aligned dots with credible intervals for comparisons. Both are computed from actual retained draws. A density-only display would make exact between-group comparisons harder.
+- Use a trace view to reveal movement of the separate chains. Its vertical axis describes the selected parameter; its horizontal axis is retained iteration.
+- Use tables for precise lookup: parameter, estimate, interval and diagnostics, with human-readable units and consistent numerical precision. The full IBM record table is not part of the primary analysis view.
+- Keep comparable estimates on a common axis. Bars start at zero; intervals may use a narrower, explicitly labeled domain. Reference values are 0 for additive coefficients and 1 for multiplicative comparisons.
+- Use an understated teal emphasis for posterior estimates, neutral context, distinct labeled chain treatments, and explicit text for warnings. Dark mode changes surfaces and contrast while preserving meanings.
+- Prefer native semantic controls, visible focus, named SVG charts, accessible result text and tables. No essential information depends on hover or color.
+- Use shared spacing, type and color tokens. Keep detailed mathematical material expandable so readers can complete the basic analysis without decoding sampler terminology.
+
+## Interaction contract
+
+Scope and model settings determine the entire result. Changing a result-affecting control invalidates the previous result. Results, explanatory text, charts, denominators, and exports must always refer to the same request. The worker's progress reports real iterations. Cancel terminates the active fit; a cancelled or superseded fit cannot publish results. Warmup is visibly separate from retained sampling.
+
+Before fitting, show an explicit ready state. During fitting, preserve a responsive interface and expose cancellation. On errors, say what failed and provide a recovery path. Do not present placeholders or previous fits as current observations.
+
+## Verification
+
+Use independent analytic or numerical reference posteriors for numerical verification, real browser interactions for runtime behavior, and rendered inspection in light/dark and desktop/narrow layouts. Inspect labels, axes, interval meaning, consistency of exports and scope, keyboard focus and text reflow. These checks do not substitute for testing comprehension with representative human readers.

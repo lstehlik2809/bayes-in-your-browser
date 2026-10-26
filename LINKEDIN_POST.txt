@@ -1,0 +1,21 @@
+I know I’m late to the party, but I’ve recently been playing with running Bayesian analyses directly in a web browser, including regression models whose posteriors we approximate through sampling.
+
+What interests me about this is the possibility of putting Bayesian analyses into small, accessible data products without maintaining a backend for fitting the models.
+
+This seems quite useful for PA, where we often work with relatively small datasets. With a suitable model and defensible priors, we can make use of relevant prior knowledge and express the uncertainty in quantities people actually care about. Small samples still leave us with uncertainty, of course, and make our assumptions matter more.
+
+To try it out, I built a small site inspired by Andrew Marritt’s free online book, Bayesian Thinking for People Analytics, which I recommended here recently.
+
+It uses the familiar IBM attrition dataset and lets you estimate attrition proportions, compare income between groups, and fit linear and logistic regressions. You choose the variables, run the model, and inspect the posterior distributions, credible intervals and results tables. The sampling progress is visible, and there are diagnostics to help you spot when a fit needs more attention.
+
+The calculations run in your browser. The site is plain HTML, CSS and JavaScript hosted on GitHub Pages, with a background worker doing the sampling so the interface stays responsive. There is no model-fitting server to set up or pay for.
+
+A couple of qualifications: the IBM data are fictional, so this is a demonstration rather than evidence about an actual workforce. And a friendly interface doesn’t remove the need to think about priors, model fit or what the data can tell us. The regression results describe associations; they don’t tell us what would happen if we intervened.
+
+Still, I find this a useful way of making some Bayesian tools available to people who wouldn’t otherwise run R or Python themselves. It’s also a practical reminder for me that quite a lot can happen inside a browser these days 🙂
+
+Feel free to give it a try:
+https://lstehlik2809.github.io/bayesian-people-analytics/
+
+Andrew’s book:
+https://bayesian-thinking.andrewmarritt.ch/

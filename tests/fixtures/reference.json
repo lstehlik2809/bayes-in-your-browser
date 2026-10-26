@@ -1,0 +1,2019 @@
+{
+  "description": "Independent SciPy reference posteriors; no JavaScript engine imported.",
+  "compareRows": [
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 4359.008926201989
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 4952.940877736475
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 2662.73760606029
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 3700.950789607387
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 4884.955635354838
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 3326.953320692532
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 4338.728024816953
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 3867.9360444982094
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 2718.84532708177
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 4934.737977155855
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 4653.953244218405
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 2897.592075678967
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 4160.821731642568
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 3711.8596906325743
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 3365.175411654272
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 5421.427659106998
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 3491.706350899532
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 2766.6079565444534
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 4881.035061303609
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 3887.578043672234
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 3588.9488534314924
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 4660.7791277232645
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 2895.200220212732
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 3509.2512173020764
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 5647.689432521878
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 3325.0009833602685
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 3364.0635385597748
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 4356.054078569718
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 3127.770463114449
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 4475.874790002988
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 4873.809164345275
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 2640.2653074245754
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 3796.792079858906
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 4787.120762166112
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 3318.3903478827415
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 4440.1041548834755
+    },
+    {
+      "Gender": "A",
+      "Department": "Sales",
+      "MonthlyIncome": 3777.46881656013
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 6374.111577991401
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 7242.6091178928755
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 3893.680167048948
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 5411.843305897311
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 7143.1953456492565
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 4864.952570615713
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 6344.455128436227
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 5656.023270786907
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 3975.7256228469287
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 7215.99129689083
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 6805.404108967993
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 4237.104238732084
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 6084.305497563957
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 5427.795223754106
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 4920.844145205018
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 7927.670118644633
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 5105.868387750001
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 4045.568179861068
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 7137.462350632408
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 5684.745463484763
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 5248.064600640505
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 6815.385493226423
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 4233.606665343666
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 5131.523975514124
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 8258.52922308727
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 4862.097697821367
+    },
+    {
+      "Gender": "B",
+      "Department": "Sales",
+      "MonthlyIncome": 4919.218270313529
+    }
+  ],
+  "linearRows": [
+    {
+      "Age": 20.0,
+      "YearsAtCompany": 0.0,
+      "TotalWorkingYears": 8.0,
+      "Department": "Sales",
+      "MonthlyIncome": 1699.2602151484443
+    },
+    {
+      "Age": 21.3,
+      "YearsAtCompany": 7.168294196961579,
+      "TotalWorkingYears": 14.10414709848079,
+      "Department": "Sales",
+      "MonthlyIncome": 2371.92319271487
+    },
+    {
+      "Age": 22.6,
+      "YearsAtCompany": 14.181859485365136,
+      "TotalWorkingYears": 20.130929742682568,
+      "Department": "Sales",
+      "MonthlyIncome": 2950.5400866166024
+    },
+    {
+      "Age": 23.9,
+      "YearsAtCompany": 2.0282240016119735,
+      "TotalWorkingYears": 16.57411200080599,
+      "Department": "Sales",
+      "MonthlyIncome": 3042.6936687741945
+    },
+    {
+      "Age": 25.2,
+      "YearsAtCompany": 8.848639500938415,
+      "TotalWorkingYears": 22.504319750469207,
+      "Department": "Sales",
+      "MonthlyIncome": 2923.474727893161
+    },
+    {
+      "Age": 26.5,
+      "YearsAtCompany": 15.808215145067372,
+      "TotalWorkingYears": 28.504107572533687,
+      "Department": "Sales",
+      "MonthlyIncome": 2865.6350911779705
+    },
+    {
+      "Age": 27.8,
+      "YearsAtCompany": 3.944116900360215,
+      "TotalWorkingYears": 14.092058450180108,
+      "Department": "Sales",
+      "MonthlyIncome": 1862.0268285448676
+    },
+    {
+      "Age": 29.1,
+      "YearsAtCompany": 11.131397319743758,
+      "TotalWorkingYears": 20.205698659871878,
+      "Department": "Sales",
+      "MonthlyIncome": 2421.959942229987
+    },
+    {
+      "Age": 30.4,
+      "YearsAtCompany": 18.197871649324675,
+      "TotalWorkingYears": 26.258935824662338,
+      "Department": "Sales",
+      "MonthlyIncome": 3427.435858398069
+    },
+    {
+      "Age": 31.700000000000003,
+      "YearsAtCompany": 6.082423697048351,
+      "TotalWorkingYears": 22.721211848524177,
+      "Department": "Sales",
+      "MonthlyIncome": 4525.291901526235
+    },
+    {
+      "Age": 33.0,
+      "YearsAtCompany": 12.891195777822126,
+      "TotalWorkingYears": 28.645597888911063,
+      "Department": "Sales",
+      "MonthlyIncome": 5360.56494629669
+    },
+    {
+      "Age": 34.3,
+      "YearsAtCompany": 0.8000019586898592,
+      "TotalWorkingYears": 14.120000979344928,
+      "Department": "Sales",
+      "MonthlyIncome": 3188.608909040536
+    },
+    {
+      "Age": 35.6,
+      "YearsAtCompany": 7.892685416399913,
+      "TotalWorkingYears": 20.18634270819996,
+      "Department": "Sales",
+      "MonthlyIncome": 3041.2105607454637
+    },
+    {
+      "Age": 36.900000000000006,
+      "YearsAtCompany": 15.084033407365329,
+      "TotalWorkingYears": 26.302016703682668,
+      "Department": "Sales",
+      "MonthlyIncome": 3074.510490733618
+    },
+    {
+      "Age": 38.2,
+      "YearsAtCompany": 3.198121471138974,
+      "TotalWorkingYears": 22.87906073556949,
+      "Department": "Sales",
+      "MonthlyIncome": 3492.826591430172
+    },
+    {
+      "Age": 39.5,
+      "YearsAtCompany": 10.130057568031424,
+      "TotalWorkingYears": 28.865028784015713,
+      "Department": "Sales",
+      "MonthlyIncome": 4714.107251787074
+    },
+    {
+      "Age": 40.8,
+      "YearsAtCompany": 16.942419336666987,
+      "TotalWorkingYears": 34.791209668333494,
+      "Department": "Sales",
+      "MonthlyIncome": 6678.936531535655
+    },
+    {
+      "Age": 42.1,
+      "YearsAtCompany": 4.807720501624089,
+      "TotalWorkingYears": 20.243860250812045,
+      "Department": "Sales",
+      "MonthlyIncome": 5116.302572864949
+    },
+    {
+      "Age": 43.400000000000006,
+      "YearsAtCompany": 11.849802550645665,
+      "TotalWorkingYears": 26.284901275322834,
+      "Department": "Sales",
+      "MonthlyIncome": 5768.624494136758
+    },
+    {
+      "Age": 44.7,
+      "YearsAtCompany": 0.02997544193259047,
+      "TotalWorkingYears": 22.8949877209663,
+      "Department": "Sales",
+      "MonthlyIncome": 5526.894756450555
+    },
+    {
+      "Age": 46.0,
+      "YearsAtCompany": 7.182589050145525,
+      "TotalWorkingYears": 28.991294525072764,
+      "Department": "Sales",
+      "MonthlyIncome": 5296.65810857412
+    },
+    {
+      "Age": 47.3,
+      "YearsAtCompany": 14.167331127707211,
+      "TotalWorkingYears": 35.0036655638536,
+      "Department": "Sales",
+      "MonthlyIncome": 5567.650757226226
+    },
+    {
+      "Age": 48.6,
+      "YearsAtCompany": 1.9982297381419192,
+      "TotalWorkingYears": 20.43911486907096,
+      "Department": "Sales",
+      "MonthlyIncome": 3991.189764359377
+    },
+    {
+      "Age": 49.900000000000006,
+      "YearsAtCompany": 8.830755919164966,
+      "TotalWorkingYears": 26.375377959582487,
+      "Department": "Sales",
+      "MonthlyIncome": 5538.69919246073
+    },
+    {
+      "Age": 51.2,
+      "YearsAtCompany": 15.818884327598676,
+      "TotalWorkingYears": 32.389442163799345,
+      "Department": "Sales",
+      "MonthlyIncome": 7764.608343737577
+    },
+    {
+      "Age": 52.5,
+      "YearsAtCompany": 3.9735296499804456,
+      "TotalWorkingYears": 28.986764824990225,
+      "Department": "Sales",
+      "MonthlyIncome": 9486.094341805767
+    },
+    {
+      "Age": 53.800000000000004,
+      "YearsAtCompany": 11.15251169009592,
+      "TotalWorkingYears": 35.09625584504796,
+      "Department": "Sales",
+      "MonthlyIncome": 10198.52943669729
+    },
+    {
+      "Age": 55.1,
+      "YearsAtCompany": 18.1912751856809,
+      "TotalWorkingYears": 41.13563759284045,
+      "Department": "Sales",
+      "MonthlyIncome": 9840.143062200881
+    },
+    {
+      "Age": 56.4,
+      "YearsAtCompany": 6.054181157661573,
+      "TotalWorkingYears": 26.58709057883079,
+      "Department": "Sales",
+      "MonthlyIncome": 5591.818417938716
+    },
+    {
+      "Age": 20.0,
+      "YearsAtCompany": 12.867273223157406,
+      "TotalWorkingYears": 17.433636611578702,
+      "Department": "Sales",
+      "MonthlyIncome": 1554.6444354815549
+    },
+    {
+      "Age": 21.3,
+      "YearsAtCompany": 0.8023936751814276,
+      "TotalWorkingYears": 13.921196837590715,
+      "Department": "Sales",
+      "MonthlyIncome": 1941.338669468708
+    },
+    {
+      "Age": 22.6,
+      "YearsAtCompany": 7.919192470935387,
+      "TotalWorkingYears": 19.999596235467695,
+      "Department": "Sales",
+      "MonthlyIncome": 2741.0889876287724
+    },
+    {
+      "Age": 23.9,
+      "YearsAtCompany": 15.110285336248339,
+      "TotalWorkingYears": 26.11514266812417,
+      "Department": "Sales",
+      "MonthlyIncome": 3758.0176714630747
+    },
+    {
+      "Age": 25.2,
+      "YearsAtCompany": 3.1999823720214535,
+      "TotalWorkingYears": 11.679991186010726,
+      "Department": "Sales",
+      "MonthlyIncome": 2630.2306239493605
+    },
+    {
+      "Age": 26.5,
+      "YearsAtCompany": 10.105816537224005,
+      "TotalWorkingYears": 17.652908268612002,
+      "Department": "Sales",
+      "MonthlyIncome": 2708.0108543783044
+    },
+    {
+      "Age": 27.8,
+      "YearsAtCompany": 16.91436346610077,
+      "TotalWorkingYears": 23.577181733050388,
+      "Department": "Sales",
+      "MonthlyIncome": 2583.698145925495
+    },
+    {
+      "Age": 29.1,
+      "YearsAtCompany": 4.801644229311377,
+      "TotalWorkingYears": 20.04082211465569,
+      "Department": "Sales",
+      "MonthlyIncome": 2512.409426959349
+    },
+    {
+      "Age": 30.4,
+      "YearsAtCompany": 11.8712923733286,
+      "TotalWorkingYears": 26.0956461866643,
+      "Department": "Sales",
+      "MonthlyIncome": 2904.0899775648236
+    },
+    {
+      "Age": 31.700000000000003,
+      "YearsAtCompany": 0.059273715741877064,
+      "TotalWorkingYears": 22.70963685787094,
+      "Department": "Sales",
+      "MonthlyIncome": 3773.409937328127
+    },
+    {
+      "Age": 33.0,
+      "YearsAtCompany": 7.1927590772568175,
+      "TotalWorkingYears": 17.79637953862841,
+      "Department": "Sales",
+      "MonthlyIncome": 3217.15625724772
+    },
+    {
+      "Age": 34.3,
+      "YearsAtCompany": 14.14902263209587,
+      "TotalWorkingYears": 23.794511316047934,
+      "Department": "Sales",
+      "MonthlyIncome": 4266.297540336955
+    },
+    {
+      "Age": 35.6,
+      "YearsAtCompany": 1.9682754662390582,
+      "TotalWorkingYears": 20.22413773311953,
+      "Department": "Sales",
+      "MonthlyIncome": 4725.235705417143
+    },
+    {
+      "Age": 36.900000000000006,
+      "YearsAtCompany": 8.816695690416873,
+      "TotalWorkingYears": 26.16834784520844,
+      "Department": "Sales",
+      "MonthlyIncome": 4696.292351752083
+    },
+    {
+      "Age": 38.2,
+      "YearsAtCompany": 15.83364505147428,
+      "TotalWorkingYears": 32.19682252573714,
+      "Department": "Sales",
+      "MonthlyIncome": 4489.192641705883
+    },
+    {
+      "Age": 39.5,
+      "YearsAtCompany": 4.003540385021083,
+      "TotalWorkingYears": 17.801770192510542,
+      "Department": "Sales",
+      "MonthlyIncome": 2724.56271176263
+    },
+    {
+      "Age": 40.8,
+      "YearsAtCompany": 11.170180704906823,
+      "TotalWorkingYears": 23.905090352453414,
+      "Department": "Sales",
+      "MonthlyIncome": 3309.820598844256
+    },
+    {
+      "Age": 42.1,
+      "YearsAtCompany": 18.180357669529762,
+      "TotalWorkingYears": 29.93017883476488,
+      "Department": "Sales",
+      "MonthlyIncome": 4566.902691528361
+    },
+    {
+      "Age": 43.400000000000006,
+      "YearsAtCompany": 6.024714624549045,
+      "TotalWorkingYears": 26.372357312274524,
+      "Department": "Sales",
+      "MonthlyIncome": 6236.542466143934
+    },
+    {
+      "Age": 44.7,
+      "YearsAtCompany": 12.846349067735266,
+      "TotalWorkingYears": 32.30317453386763,
+      "Department": "Sales",
+      "MonthlyIncome": 7935.074749206261
+    },
+    {
+      "Age": 46.0,
+      "YearsAtCompany": 0.8092494694481056,
+      "TotalWorkingYears": 28.804624734724054,
+      "Department": "Sales",
+      "MonthlyIncome": 8373.833851777259
+    },
+    {
+      "Age": 47.3,
+      "YearsAtCompany": 7.947525029259214,
+      "TotalWorkingYears": 23.893762514629607,
+      "Department": "Sales",
+      "MonthlyIncome": 4878.888831619654
+    },
+    {
+      "Age": 48.6,
+      "YearsAtCompany": 15.134045835168674,
+      "TotalWorkingYears": 30.007022917584337,
+      "Department": "Sales",
+      "MonthlyIncome": 4730.221842876909
+    },
+    {
+      "Age": 49.900000000000006,
+      "YearsAtCompany": 3.197325518408097,
+      "TotalWorkingYears": 26.558662759204054,
+      "Department": "Sales",
+      "MonthlyIncome": 4992.616601810856
+    },
+    {
+      "Age": 51.2,
+      "YearsAtCompany": 10.079185030036367,
+      "TotalWorkingYears": 32.51959251501819,
+      "Department": "Sales",
+      "MonthlyIncome": 6353.032609289465
+    },
+    {
+      "Age": 52.5,
+      "YearsAtCompany": 16.888242190229676,
+      "TotalWorkingYears": 38.44412109511484,
+      "Department": "Sales",
+      "MonthlyIncome": 8938.1165926428
+    },
+    {
+      "Age": 53.800000000000004,
+      "YearsAtCompany": 4.800048965328276,
+      "TotalWorkingYears": 23.92002448266414,
+      "Department": "Sales",
+      "MonthlyIncome": 7192.818237888001
+    },
+    {
+      "Age": 55.1,
+      "YearsAtCompany": 11.895689799582618,
+      "TotalWorkingYears": 29.987844899791313,
+      "Department": "Sales",
+      "MonthlyIncome": 8736.816377771022
+    },
+    {
+      "Age": 56.4,
+      "YearsAtCompany": 0.087232951049565,
+      "TotalWorkingYears": 26.603616475524785,
+      "Department": "Sales",
+      "MonthlyIncome": 8823.10125321742
+    },
+    {
+      "Age": 20.0,
+      "YearsAtCompany": 7.1985745296169075,
+      "TotalWorkingYears": 17.599287264808453,
+      "Department": "Sales",
+      "MonthlyIncome": 2131.9799971866596
+    },
+    {
+      "Age": 21.3,
+      "YearsAtCompany": 14.127347601427827,
+      "TotalWorkingYears": 23.583673800713914,
+      "Department": "Sales",
+      "MonthlyIncome": 2119.2041324014035
+    },
+    {
+      "Age": 22.6,
+      "YearsAtCompany": 1.9390378757795568,
+      "TotalWorkingYears": 20.00951893788978,
+      "Department": "Sales",
+      "MonthlyIncome": 2347.173233453232
+    },
+    {
+      "Age": 23.9,
+      "YearsAtCompany": 8.806776445998322,
+      "TotalWorkingYears": 14.96338822299916,
+      "Department": "Sales",
+      "MonthlyIncome": 1870.4177025834483
+    },
+    {
+      "Age": 25.2,
+      "YearsAtCompany": 15.852163860670155,
+      "TotalWorkingYears": 21.00608193033508,
+      "Department": "Sales",
+      "MonthlyIncome": 2653.052432905369
+    },
+    {
+      "Age": 26.5,
+      "YearsAtCompany": 4.033471140060561,
+      "TotalWorkingYears": 17.616735570030283,
+      "Department": "Sales",
+      "MonthlyIncome": 3447.1606469228363
+    },
+    {
+      "Age": 27.8,
+      "YearsAtCompany": 11.184005207639359,
+      "TotalWorkingYears": 23.71200260381968,
+      "Department": "Sales",
+      "MonthlyIncome": 3985.026154217878
+    },
+    {
+      "Age": 29.1,
+      "YearsAtCompany": 18.16536573589802,
+      "TotalWorkingYears": 29.72268286794901,
+      "Department": "Sales",
+      "MonthlyIncome": 3993.061697377482
+    },
+    {
+      "Age": 30.4,
+      "YearsAtCompany": 5.994689769195206,
+      "TotalWorkingYears": 15.157344884597602,
+      "Department": "Sales",
+      "MonthlyIncome": 2222.376322046779
+    },
+    {
+      "Age": 31.700000000000003,
+      "YearsAtCompany": 12.828896004204935,
+      "TotalWorkingYears": 21.094448002102467,
+      "Department": "Sales",
+      "MonthlyIncome": 2287.8597719362215
+    },
+    {
+      "Age": 33.0,
+      "YearsAtCompany": 0.8204144638621418,
+      "TotalWorkingYears": 17.61020723193107,
+      "Department": "Sales",
+      "MonthlyIncome": 2663.9837401704917
+    },
+    {
+      "Age": 34.3,
+      "YearsAtCompany": 7.977043037243362,
+      "TotalWorkingYears": 23.70852151862168,
+      "Department": "Sales",
+      "MonthlyIncome": 3652.1336073315083
+    },
+    {
+      "Age": 35.6,
+      "YearsAtCompany": 15.154778136311577,
+      "TotalWorkingYears": 29.81738906815579,
+      "Department": "Sales",
+      "MonthlyIncome": 5157.140160618438
+    },
+    {
+      "Age": 36.900000000000006,
+      "YearsAtCompany": 3.190210930650875,
+      "TotalWorkingYears": 26.35510546532544,
+      "Department": "Sales",
+      "MonthlyIncome": 6440.849338559829
+    },
+    {
+      "Age": 38.2,
+      "YearsAtCompany": 10.050764672552408,
+      "TotalWorkingYears": 21.305382336276203,
+      "Department": "Sales",
+      "MonthlyIncome": 4258.281711869294
+    },
+    {
+      "Age": 39.5,
+      "YearsAtCompany": 16.86464560862254,
+      "TotalWorkingYears": 27.23232280431127,
+      "Department": "Sales",
+      "MonthlyIncome": 4148.056678752819
+    },
+    {
+      "Age": 40.8,
+      "YearsAtCompany": 4.80297074790635,
+      "TotalWorkingYears": 23.721485373953175,
+      "Department": "Sales",
+      "MonthlyIncome": 3883.974060642179
+    },
+    {
+      "Age": 42.1,
+      "YearsAtCompany": 11.922443672918114,
+      "TotalWorkingYears": 29.801221836459057,
+      "Department": "Sales",
+      "MonthlyIncome": 4175.3280028169365
+    },
+    {
+      "Age": 43.400000000000006,
+      "YearsAtCompany": 0.11322152737963607,
+      "TotalWorkingYears": 26.41661076368982,
+      "Department": "Sales",
+      "MonthlyIncome": 5101.382777109534
+    },
+    {
+      "Age": 44.7,
+      "YearsAtCompany": 7.199904031716146,
+      "TotalWorkingYears": 21.479952015858075,
+      "Department": "Sales",
+      "MonthlyIncome": 4298.725202850569
+    },
+    {
+      "Age": 46.0,
+      "YearsAtCompany": 14.102795691197507,
+      "TotalWorkingYears": 27.451397845598756,
+      "Department": "Sales",
+      "MonthlyIncome": 5966.102933122685
+    },
+    {
+      "Age": 47.3,
+      "YearsAtCompany": 1.9111774662584984,
+      "TotalWorkingYears": 23.87558873312925,
+      "Department": "Sales",
+      "MonthlyIncome": 7115.899278209451
+    },
+    {
+      "Age": 48.6,
+      "YearsAtCompany": 8.801222269215325,
+      "TotalWorkingYears": 29.840611134607663,
+      "Department": "Sales",
+      "MonthlyIncome": 7478.779708877025
+    },
+    {
+      "Age": 49.900000000000006,
+      "YearsAtCompany": 15.87402240114511,
+      "TotalWorkingYears": 35.897011200572564,
+      "Department": "Sales",
+      "MonthlyIncome": 7166.314916586838
+    },
+    {
+      "Age": 51.2,
+      "YearsAtCompany": 4.062645756486617,
+      "TotalWorkingYears": 32.51132287824331,
+      "Department": "Sales",
+      "MonthlyIncome": 6866.153416634239
+    },
+    {
+      "Age": 52.5,
+      "YearsAtCompany": 11.193672892220038,
+      "TotalWorkingYears": 27.596836446110018,
+      "Department": "Sales",
+      "MonthlyIncome": 4653.35693614788
+    },
+    {
+      "Age": 53.800000000000004,
+      "YearsAtCompany": 18.14663806401466,
+      "TotalWorkingYears": 33.59331903200733,
+      "Department": "Sales",
+      "MonthlyIncome": 6111.863680412362
+    },
+    {
+      "Age": 55.1,
+      "YearsAtCompany": 5.964784876010283,
+      "TotalWorkingYears": 30.022392438005145,
+      "Department": "Sales",
+      "MonthlyIncome": 8404.666991517248
+    },
+    {
+      "Age": 56.4,
+      "YearsAtCompany": 12.815308310599187,
+      "TotalWorkingYears": 35.9676541552996,
+      "Department": "Sales",
+      "MonthlyIncome": 11341.85135361028
+    },
+    {
+      "Age": 20.0,
+      "YearsAtCompany": 0.8356364326738355,
+      "TotalWorkingYears": 17.41781821633692,
+      "Department": "Sales",
+      "MonthlyIncome": 3256.124218058414
+    },
+    {
+      "Age": 21.3,
+      "YearsAtCompany": 8.007079660546733,
+      "TotalWorkingYears": 12.523539830273368,
+      "Department": "Sales",
+      "MonthlyIncome": 1978.2636812922676
+    },
+    {
+      "Age": 22.6,
+      "YearsAtCompany": 15.17201388116249,
+      "TotalWorkingYears": 18.626006940581245,
+      "Department": "Sales",
+      "MonthlyIncome": 1887.0303248592884
+    },
+    {
+      "Age": 23.9,
+      "YearsAtCompany": 3.1787993327201116,
+      "TotalWorkingYears": 15.149399666360056,
+      "Department": "Sales",
+      "MonthlyIncome": 1867.967644870716
+    },
+    {
+      "Age": 25.2,
+      "YearsAtCompany": 10.021197502350232,
+      "TotalWorkingYears": 21.090598751175115,
+      "Department": "Sales",
+      "MonthlyIncome": 2212.898200422544
+    },
+    {
+      "Age": 26.5,
+      "YearsAtCompany": 16.84410678607684,
+      "TotalWorkingYears": 27.02205339303842,
+      "Department": "Sales",
+      "MonthlyIncome": 3009.9914559825384
+    },
+    {
+      "Age": 27.8,
+      "YearsAtCompany": 4.81034357174601,
+      "TotalWorkingYears": 23.525171785873006,
+      "Department": "Sales",
+      "MonthlyIncome": 4133.643181957419
+    },
+    {
+      "Age": 29.1,
+      "YearsAtCompany": 11.95094960290647,
+      "TotalWorkingYears": 18.615474801453235,
+      "Department": "Sales",
+      "MonthlyIncome": 3231.0883989279496
+    },
+    {
+      "Age": 30.4,
+      "YearsAtCompany": 0.1366523429472242,
+      "TotalWorkingYears": 15.228326171473613,
+      "Department": "Sales",
+      "MonthlyIncome": 3493.5890189309102
+    }
+  ],
+  "logisticRows": [
+    {
+      "Age": 18,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 18,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 25,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 32,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 39,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "Yes",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "No",
+      "Department": "Sales"
+    },
+    {
+      "Age": 46,
+      "Attrition": "No",
+      "Department": "Sales"
+    }
+  ],
+  "gaussian": {
+    "default": {
+      "compare": {
+        "raw": [
+          {
+            "mean": 8.267201669087,
+            "sd": 0.04454711573976701,
+            "lower": 8.179626280701223,
+            "median": 8.267201669087,
+            "upper": 8.354777057472775
+          },
+          {
+            "mean": 0.35197670534052855,
+            "sd": 0.06748032112799461,
+            "lower": 0.2193168185432901,
+            "median": 0.35197670534052855,
+            "upper": 0.484636592137767
+          },
+          {
+            "mean": 0.27433894966938815,
+            "sd": 0.023922976570477133,
+            "lower": 0.23237607614456468,
+            "median": 0.2726374972461366,
+            "upper": 0.32601003673641843
+          }
+        ],
+        "covariance": [
+          [
+            0.0019844455207321974,
+            -0.0019135724664203334
+          ],
+          [
+            -0.0019135724664203334,
+            0.004553593739537275
+          ]
+        ],
+        "betaLocation": [
+          8.267201669087,
+          0.35197670534052855
+        ],
+        "betaScale": [
+          [
+            0.0019260794760047797,
+            -0.0018572909232903237
+          ],
+          [
+            -0.0018572909232903237,
+            0.004419664511903825
+          ]
+        ],
+        "df": 68.0
+      },
+      "linear1": {
+        "raw": [
+          {
+            "mean": 8.306380037635842,
+            "sd": 0.02775071321099121,
+            "lower": 8.251876759963382,
+            "median": 8.306380037635842,
+            "upper": 8.360883315308302
+          },
+          {
+            "mean": 0.41121203600898193,
+            "sd": 0.02778682345816148,
+            "lower": 0.3566378366699917,
+            "median": 0.41121203600898193,
+            "upper": 0.46578623534797214
+          },
+          {
+            "mean": 0.27156052741513936,
+            "sd": 0.019421779216500522,
+            "lower": 0.23678276081552915,
+            "median": 0.2704196906461211,
+            "upper": 0.31283939835351715
+          }
+        ],
+        "covariance": [
+          [
+            0.0007701020837186821,
+            1.3537263523724607e-19
+          ],
+          [
+            1.3537263523724607e-19,
+            0.0007721075578950331
+          ]
+        ],
+        "betaLocation": [
+          8.306380037635842,
+          0.41121203600898193
+        ],
+        "betaScale": [
+          [
+            0.0007547000420443085,
+            1.3266518253250116e-19
+          ],
+          [
+            1.3266518253250116e-19,
+            0.0007566654067371325
+          ]
+        ],
+        "df": 100.0
+      },
+      "linear3": {
+        "raw": [
+          {
+            "mean": 8.30638003763584,
+            "sd": 0.02336371869269285,
+            "lower": 8.260492955826905,
+            "median": 8.30638003763584,
+            "upper": 8.352267119444775
+          },
+          {
+            "mean": 0.2122168147057386,
+            "sd": 0.03928822116299636,
+            "lower": 0.13505350682882006,
+            "median": 0.2122168147057386,
+            "upper": 0.2893801225826571
+          },
+          {
+            "mean": -0.11925563486003038,
+            "sd": 0.0327378034371004,
+            "lower": -0.18355371532925469,
+            "median": -0.11925563486003038,
+            "upper": -0.05495755439080609
+          },
+          {
+            "mean": 0.29085399990803623,
+            "sd": 0.04644158035912554,
+            "lower": 0.19964126852285807,
+            "median": 0.29085399990803623,
+            "upper": 0.38206673129321433
+          },
+          {
+            "mean": 0.22863065616827802,
+            "sd": 0.01635147113790827,
+            "lower": 0.19935076165113091,
+            "median": 0.22767016952626018,
+            "upper": 0.2633839225518696
+          }
+        ],
+        "covariance": [
+          [
+            0.0005458633511512853,
+            4.413188516233403e-19,
+            2.4245361327355845e-19,
+            -5.080244079660275e-19
+          ],
+          [
+            4.413188516233403e-19,
+            0.0015435643221525146,
+            0.0006848071144256273,
+            -0.0014641773998847133
+          ],
+          [
+            2.4245361327355845e-19,
+            0.0006848071144256273,
+            0.001071763773886223,
+            -0.0010612381530961962
+          ],
+          [
+            -5.080244079660275e-19,
+            -0.0014641773998847133,
+            -0.0010612381530961962,
+            0.002156820386253115
+          ]
+        ],
+        "betaLocation": [
+          8.30638003763584,
+          0.2122168147057386,
+          -0.11925563486003038,
+          0.29085399990803623
+        ],
+        "betaScale": [
+          [
+            0.0005349460841282596,
+            4.324924745908735e-19,
+            2.376045410080873e-19,
+            -4.97863919806707e-19
+          ],
+          [
+            4.324924745908735e-19,
+            0.0015126930357094643,
+            0.0006711109721371149,
+            -0.0014348938518870193
+          ],
+          [
+            2.376045410080873e-19,
+            0.0006711109721371148,
+            0.0010503284984084986,
+            -0.0010400133900342722
+          ],
+          [
+            -4.97863919806707e-19,
+            -0.001434893851887019,
+            -0.0010400133900342722,
+            0.0021136839785280527
+          ]
+        ],
+        "df": 100.0
+      }
+    },
+    "wide": {
+      "compare": {
+        "raw": [
+          {
+            "mean": 8.258934920897802,
+            "sd": 0.0665172198826923,
+            "lower": 8.128168399455683,
+            "median": 8.258934920897802,
+            "upper": 8.389701442339922
+          },
+          {
+            "mean": 0.3698550440603012,
+            "sd": 0.10198886940579917,
+            "lower": 0.16935463677432097,
+            "median": 0.3698550440603012,
+            "upper": 0.5703554513462814
+          },
+          {
+            "mean": 0.40476497327789684,
+            "sd": 0.035296420664824725,
+            "lower": 0.3428521409899259,
+            "median": 0.4022546175830129,
+            "upper": 0.48100149091832334
+          }
+        ],
+        "covariance": [
+          [
+            0.0044245405409224356,
+            -0.0043839484258681016
+          ],
+          [
+            -0.0043839484258681016,
+            0.010401729482673157
+          ]
+        ],
+        "betaLocation": [
+          8.258934920897802,
+          0.3698550440603012
+        ],
+        "betaScale": [
+          [
+            0.004294406995601187,
+            -0.004255008766283745
+          ],
+          [
+            -0.004255008766283745,
+            0.010095796262594535
+          ]
+        ],
+        "df": 68.0
+      },
+      "linear1": {
+        "raw": [
+          {
+            "mean": 8.305968561083246,
+            "sd": 0.03734275056731642,
+            "lower": 8.232626218933362,
+            "median": 8.305968561083246,
+            "upper": 8.37931090323313
+          },
+          {
+            "mean": 0.4144499260562968,
+            "sd": 0.03750168261873992,
+            "lower": 0.34079543633514353,
+            "median": 0.4144499260562968,
+            "upper": 0.4881044157774501
+          },
+          {
+            "mean": 0.36506934895148013,
+            "sd": 0.026109451036703955,
+            "lower": 0.31831624852353324,
+            "median": 0.36353567783775187,
+            "upper": 0.42056213607472986
+          }
+        ],
+        "covariance": [
+          [
+            0.0013944810199328108,
+            2.4705943331369153e-19
+          ],
+          [
+            2.4705943331369153e-19,
+            0.0014063761992366998
+          ]
+        ],
+        "betaLocation": [
+          8.305968561083246,
+          0.4144499260562968
+        ],
+        "betaScale": [
+          [
+            0.0013665913995341546,
+            2.421182446474177e-19
+          ],
+          [
+            2.421182446474177e-19,
+            0.0013782486752519658
+          ]
+        ],
+        "df": 100.0
+      },
+      "linear3": {
+        "raw": [
+          {
+            "mean": 8.305968561083244,
+            "sd": 0.03423117862135264,
+            "lower": 8.238737444561302,
+            "median": 8.305968561083244,
+            "upper": 8.373199677605186
+          },
+          {
+            "mean": 0.20940428384873017,
+            "sd": 0.05889469362792488,
+            "lower": 0.09373324448366441,
+            "median": 0.20940428384873017,
+            "upper": 0.3250753232137959
+          },
+          {
+            "mean": -0.12360672059861764,
+            "sd": 0.04883357836688148,
+            "lower": -0.21951741165847022,
+            "median": -0.12360672059861764,
+            "upper": -0.027696029538765113
+          },
+          {
+            "mean": 0.2975096697626749,
+            "sd": 0.06983850660044666,
+            "lower": 0.16034463589369227,
+            "median": 0.2975096697626749,
+            "upper": 0.4346747036316575
+          },
+          {
+            "mean": 0.33465007004804287,
+            "sd": 0.02393388994021008,
+            "lower": 0.29179265575645014,
+            "median": 0.33324419155642493,
+            "upper": 0.385518939623902
+          }
+        ],
+        "covariance": [
+          [
+            0.0011717735898069497,
+            9.98952584330719e-19,
+            5.562406310215337e-19,
+            -1.155426780585731e-18
+          ],
+          [
+            9.989525843307189e-19,
+            0.003468584937527135,
+            0.0015757258911374378,
+            -0.0033360229314418864
+          ],
+          [
+            5.562406310215339e-19,
+            0.0015757258911374382,
+            0.0023847183761143546,
+            -0.0024171429006595024
+          ],
+          [
+            -1.155426780585731e-18,
+            -0.0033360229314418864,
+            -0.0024171429006595024,
+            0.004877417004180632
+          ]
+        ],
+        "betaLocation": [
+          8.305968561083244,
+          0.20940428384873017,
+          -0.12360672059861764,
+          0.2975096697626749
+        ],
+        "betaScale": [
+          [
+            0.0011483381180108106,
+            9.789735326441046e-19,
+            5.45115818401103e-19,
+            -1.1323182449740165e-18
+          ],
+          [
+            9.789735326441044e-19,
+            0.003399213238776592,
+            0.0015442113733146888,
+            -0.0032693024728130482
+          ],
+          [
+            5.451158184011032e-19,
+            0.0015442113733146893,
+            0.002337024008592067,
+            -0.002368800042646312
+          ],
+          [
+            -1.1323182449740165e-18,
+            -0.0032693024728130482,
+            -0.002368800042646312,
+            0.004779868664097019
+          ]
+        ],
+        "df": 100.0
+      }
+    }
+  },
+  "logistic": {
+    "default": {
+      "raw": [
+        {
+          "mean": -0.35889218637220566,
+          "sd": 0.2486148732079888,
+          "lower": -0.8547981363907605,
+          "median": -0.35614747970192023,
+          "upper": 0.1213831804092363
+        },
+        {
+          "mean": 1.459997101268696,
+          "sd": 0.2823389124014978,
+          "lower": 0.9345765533319452,
+          "median": 1.4500953089193986,
+          "upper": 2.04166647628579
+        }
+      ],
+      "boundaryDensity": 4.379756369875683e-34,
+      "gridSize": 2001,
+      "refinementError": 0.00018208039101563767
+    },
+    "wide": {
+      "raw": [
+        {
+          "mean": -0.3786851807736562,
+          "sd": 0.25626129488409105,
+          "lower": -0.8914040011622298,
+          "median": -0.37535546385894514,
+          "upper": 0.11505588226833664
+        },
+        {
+          "mean": 1.57311571029152,
+          "sd": 0.306553974696742,
+          "lower": 1.0084122588045303,
+          "median": 1.5603551382839684,
+          "upper": 2.2103973339740897
+        }
+      ],
+      "boundaryDensity": 1.3373903296849097e-25,
+      "gridSize": 2001,
+      "refinementError": 0.0003353076203125305
+    }
+  },
+  "beta": {
+    "default:overall": {
+      "mean": 0.16168478260869565,
+      "sd": 0.009592611920105236,
+      "lower": 0.14332539875457956,
+      "median": 0.16153153941185858,
+      "upper": 0.18091480743110358
+    },
+    "default:zero": {
+      "mean": 0.07142857142857142,
+      "sd": 0.06649638116080449,
+      "lower": 0.001945628497346748,
+      "median": 0.051922485660828556,
+      "upper": 0.24705263800047095
+    },
+    "default:all": {
+      "mean": 0.9285714285714286,
+      "sd": 0.06649638116080449,
+      "lower": 0.7529473619995289,
+      "median": 0.9480775143391714,
+      "upper": 0.9980543715026533
+    },
+    "default:smallA": {
+      "mean": 0.21428571428571427,
+      "sd": 0.10594569267279517,
+      "lower": 0.050381073491151535,
+      "median": 0.20044859529798487,
+      "upper": 0.45447105567655766
+    },
+    "default:smallB": {
+      "mean": 0.5,
+      "sd": 0.10910894511799618,
+      "lower": 0.2886432479169988,
+      "median": 0.5,
+      "upper": 0.7113567520830011
+    },
+    "wide:overall": {
+      "mean": 0.16145479265805573,
+      "sd": 0.00959035770948029,
+      "lower": 0.14310043119210306,
+      "median": 0.1613013410765828,
+      "upper": 0.18068097879671852
+    },
+    "wide:zero": {
+      "mean": 0.038461538461538464,
+      "sd": 0.051396392675466224,
+      "lower": 4.0075310076598856e-05,
+      "median": 0.018393128764648815,
+      "upper": 0.18530593831248504
+    },
+    "wide:all": {
+      "mean": 0.9615384615384616,
+      "sd": 0.051396392675466224,
+      "lower": 0.8146940616875149,
+      "median": 0.9816068712353512,
+      "upper": 0.9999599246899235
+    },
+    "wide:smallA": {
+      "mean": 0.19230769230769232,
+      "sd": 0.10533126105868579,
+      "lower": 0.036337756398671824,
+      "median": 0.17629482211101374,
+      "upper": 0.43624793593638334
+    },
+    "wide:smallB": {
+      "mean": 0.5,
+      "sd": 0.11180339887498948,
+      "lower": 0.28357122184173544,
+      "median": 0.5,
+      "upper": 0.7164287781582646
+    }
+  }
+}
