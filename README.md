@@ -2,7 +2,7 @@
 
 A small educational People Analytics lab, built with HTML, CSS and JavaScript. It fits six model types on the fictional IBM attrition dataset, samples posterior draws locally, and presents distributions, credible intervals, traces and numerical tables.
 
-[Open the site](https://lstehlik2809.github.io/bayesian-people-analytics/) · [LinkedIn draft](LINKEDIN_POST.txt) · [Design and metric definitions](DESIGN.md) · [Data provenance and terms](data/SOURCE.md)
+[Open the site](https://lstehlik2809.github.io/bayes-in-your-browser/) · [LinkedIn draft](LINKEDIN_POST.txt) · [Design and metric definitions](DESIGN.md) · [Data provenance and terms](data/SOURCE.md)
 
 ## Run locally
 

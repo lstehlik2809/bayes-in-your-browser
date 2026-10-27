@@ -18,6 +18,6 @@ A couple of caveats: the IBM data are fictional, so this is a demonstration, not
 
 I find this a useful way to make some Bayesian tools available to people who wouldn’t otherwise run R or Python themselves. It also reminded me how much can happen inside a browser these days 🤓
 
-Feel free to give it a try 👉 [Bayesian People Analytics](https://lstehlik2809.github.io/bayesian-people-analytics/)
+Feel free to give it a try 👉 [Bayesian People Analytics](https://lstehlik2809.github.io/bayes-in-your-browser/)
 
 And Andrew’s book 👉 [Bayesian Thinking for People Analytics](https://bayesian-thinking.andrewmarritt.ch/)
