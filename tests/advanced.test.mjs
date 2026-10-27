@@ -99,10 +99,10 @@ function independentOrdinal(rows,{predictors,outcome,prior},free){
  }
  return lp;
 }
-test('ordinal three-predictor gradients agree with an independent target, both priors',()=>{
- const rows=ibm.slice(0,120),vectors=[[-1,.2,.1,.3,-.15,.4],[-2,.6,-.3,-.5,.5,-.2],[-.5,-.7,.8,.8,-.4,.6]];
+test('ordinal five-predictor gradients agree with an independent target, both priors',()=>{
+ const rows=ibm.slice(0,120),vectors=[[-1,.2,.1,.3,-.15,.4,.2,-.3],[-2,.6,-.3,-.5,.5,-.2,-.4,.1],[-.5,-.7,.8,.8,-.4,.6,.3,.5]];
  for(const prior of ['default','wide'])for(const outcome of ['JobSatisfaction','EnvironmentSatisfaction','WorkLifeBalance']){
-  const config={type:'ordinal',outcome,predictors:['Age','YearsAtCompany','OverTime'],prior};
+  const config={type:'ordinal',outcome,predictors:['Age','YearsAtCompany','DistanceFromHome','TotalWorkingYears','OverTime'],prior};
   const model=buildModel(rows,config);
   for(const free of vectors){
    const actual=ordinalLogDensity(model,free);assert.ok(Math.abs(actual.logp-independentOrdinal(rows,config,free))<1e-9);

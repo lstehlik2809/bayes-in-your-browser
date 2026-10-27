@@ -62,3 +62,6 @@ footer .footer-brand{font-weight:700;letter-spacing:-.02em}
 @keyframes wipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
 @keyframes spin{to{transform:rotate(360deg)}}
 @media(max-width:760px){.idea-panel h2 br,.hero h1 br{display:none}}
+
+/* Nested equal-tailed intervals share a center line; the median stays distinct in both themes. */
+.chart-range-95{stroke-width:2}.chart-range-50{stroke-width:6}.chart-dot{fill:var(--text);stroke:var(--surface);stroke-width:1.5}.key-interval{position:relative}.key-interval::after{content:"";position:absolute;width:50%;left:25%;top:50%;height:5px;transform:translateY(-50%);background:var(--accent)}

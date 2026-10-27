@@ -6,6 +6,6 @@
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "test": "node --test",
-    "check": "node --check engine.js && node --check advanced.js && node --check app.js && node --check worker.js"
+    "check": "node --check engine.js && node --check advanced.js && node --check formatting.js && node --check app.js && node --check worker.js"
   }
 }

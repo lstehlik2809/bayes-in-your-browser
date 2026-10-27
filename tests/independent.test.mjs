@@ -99,7 +99,7 @@ test('diagnostics reject shifted, autocorrelated and frozen chains',()=>{
 });
 
 test('invalid configurations fail explicitly; proper-prior one-outcome logistic is finite',async()=>{
-  for(const config of [{type:'linear',predictors:[]},{type:'linear',predictors:['Age','YearsAtCompany','TotalWorkingYears','DistanceFromHome']},{type:'linear',predictors:['JobLevel']},{type:'compare',groupBy:'Gender',groupA:'A',groupB:'A'},{type:'proportion',department:'Missing'}])assert.throws(()=>buildModel(ref.linearRows,config));
+  for(const config of [{type:'linear',predictors:[]},{type:'linear',predictors:['Age','YearsAtCompany','TotalWorkingYears','DistanceFromHome','OverTime','Age']},{type:'linear',predictors:['JobLevel']},{type:'compare',groupBy:'Gender',groupA:'A',groupB:'A'},{type:'proportion',department:'Missing'}])assert.throws(()=>buildModel(ref.linearRows,config));
   assert.throws(()=>buildModel([],{type:'proportion'}));
   assert.throws(()=>buildModel(ref.linearRows.map(r=>({...r,Age:1})),{type:'linear',predictors:['Age']}));
   assert.throws(()=>buildModel(ref.linearRows.map((r,i)=>({...r,MonthlyIncome:i?1000:0})),{type:'linear',predictors:['Age']}));

@@ -1,10 +1,11 @@
 /* Dependency-free posterior sampling. Priors and transformations are part of the public model. */
 import { buildOrdinal, ordinalLogDensity, ordinalValues, ordinalGeometry, buildHierarchical, initialHierarchy, hierarchySweep } from './advanced.js';
+import { formatNumber } from './formatting.js';
 export { ordinalLogDensity, ordinalProbabilities, ORDINAL_OUTCOMES, HIERARCHICAL_GROUPS } from './advanced.js';
 export const CONTINUOUS = ['Age', 'YearsAtCompany', 'DistanceFromHome', 'TotalWorkingYears'];
 export const PREDICTORS = [...CONTINUOUS, 'OverTime'];
 export const GROUPS = ['Gender', 'OverTime', 'Department', 'BusinessTravel', 'Attrition'];
-export const DEFAULT_SETTINGS = { warmup: 1000, draws: 1500, seed: 2026, chains: 4 };
+export const DEFAULT_SETTINGS = { warmup: 1000, draws: 4000, seed: 2026, chains: 4 };
 const mean = a => a.reduce((s, v) => s + v, 0) / a.length;
 const dot = (a, b) => a.reduce((s, v, i) => s + v * b[i], 0);
 const mv = (A, v) => A.map(r => dot(r, v));
@@ -78,12 +79,12 @@ export function buildModel(rows, config = {}) {
     model.parameters = [parameter('intercept', 'Group A log geometric mean', 'log income units/month', { transform: 'beta[0]' }), parameter('beta_group', 'Group B − A, log income', 'log multiplier', { transform: 'beta[1]', null: 0 }), parameter('geomean_A', `${groupA} geometric mean`, 'income units/month', { transform: 'exp(beta[0])', family: 'income' }), parameter('geomean_B', `${groupB} geometric mean`, 'income units/month', { transform: 'exp(beta[0]+beta[1])', family: 'income' }), parameter('ratio', `${groupB} / ${groupA}`, 'income multiplier', { transform: 'exp(beta[1])', null: 1, family: 'ratio' })];
   } else {
     const predictors = config.predictors;
-    if (!Array.isArray(predictors) || predictors.length < 1 || predictors.length > 3 || new Set(predictors).size !== predictors.length || predictors.some(p => !PREDICTORS.includes(p))) throw new Error('Choose one to three different suitable predictors.');
+    if (!Array.isArray(predictors) || predictors.length < 1 || predictors.length > 5 || new Set(predictors).size !== predictors.length || predictors.some(p => !PREDICTORS.includes(p))) throw new Error('Choose one to five different supported predictors.');
     model.scales = predictors.map(field => {
       const binary = field === 'OverTime'; const values = selected.map(r => binary ? yesNo(r[field], field) : requireNumber(r[field], field));
       const center = mean(values), sd = Math.sqrt(values.reduce((s, v) => s + (v - center) ** 2, 0) / (values.length - 1));
       if (!(sd > 0) || !Number.isFinite(sd)) throw new Error(`${field} is constant in this selection. Choose another predictor or department.`);
-      return { field, mean: binary ? 0 : center, sd: binary ? 1 : sd, sampleMean: center, sampleSD: sd, binary, change: binary ? 'No → Yes' : `+1 SD (${sd.toPrecision(4)} ${field === 'Age' || field.includes('Years') ? 'years' : 'distance units'})` };
+      return { field, mean: binary ? 0 : center, sd: binary ? 1 : sd, sampleMean: center, sampleSD: sd, binary, change: binary ? 'No → Yes' : `+1 SD (${formatNumber(sd)} ${field === 'Age' || field.includes('Years') ? 'years' : 'distance units'})` };
     });
     X = selected.map(r => [1, ...model.scales.map(s => ((s.binary ? yesNo(r[s.field], s.field) : r[s.field]) - s.mean) / s.sd)]);
     if (type === 'ordinal') return buildOrdinal(selected, model, wide, X.map(x => x.slice(1)));
@@ -190,7 +191,7 @@ export async function runChains(model, settings = {}, onProgress = () => {}) {
   }
   const summary = summarize(chains, model.parameters);
   const warnings = summary.filter(r => r.warning).map(r => `${r.label}: ${r.warning}`);
-  return { version: 1, config: model.config, requestedSettings: requested, settings: s, n: model.n, observed: model.observed, scales: model.scales, prior: model.prior, sampler: model.sampler, parameters: model.parameters, freeParameterIds: model.freeParameterIds, profile: model.profile, modelNotes: model.modelNotes || [], chains, chainInfo, summary, warnings, interval: '95% equal-tailed credible interval (empirical 2.5th–97.5th percentiles)', diagnosticsMethod: 'Classical split R-hat; approximate initial-positive-pair autocorrelation ESS, not rank-normalized. Thresholds: R-hat ≤ 1.01 and ESS ≥ 400. Passing is not proof of convergence or model adequacy.' };
+  return { version: 1, config: model.config, requestedSettings: requested, settings: s, n: model.n, observed: model.observed, scales: model.scales, prior: model.prior, sampler: model.sampler, parameters: model.parameters, freeParameterIds: model.freeParameterIds, profile: model.profile, modelNotes: model.modelNotes || [], chains, chainInfo, summary, warnings, interval: '95% equal-tailed credible interval (empirical 2.5th–97.5th percentiles)', intervals: [{ level: .5, lowerQuantile: .25, upperQuantile: .75, lowField: 'low50', highField: 'high50' }, { level: .95, lowerQuantile: .025, upperQuantile: .975, lowField: 'low', highField: 'high' }], diagnosticsMethod: 'Classical split R-hat; approximate initial-positive-pair autocorrelation ESS, not rank-normalized. Thresholds use unrounded values: R-hat ≤ 1.01 and ESS ≥ 400. Passing is not proof of convergence or model adequacy.' };
 }
 export function diagnostics(chains) {
   if (!Array.isArray(chains) || chains.length < 2 || chains.some(c => !Array.isArray(c) || c.length < 4 || c.some(v => !Number.isFinite(v)))) return { rhat: null, ess: null, warning: 'Diagnostics undefined: insufficient or nonfinite draws.' };
@@ -210,6 +211,6 @@ export function summarize(chains, parameters) {
   return parameters.map((p, j) => {
     const series = chains.map(chain => chain.map(draw => draw[j])), all = series.flat(), sorted = [...all].sort((a, b) => a - b), d = diagnostics(series);
     const avg = mean(all), sd = Math.sqrt(all.reduce((s, v) => s + (v - avg) ** 2, 0) / (all.length - 1));
-    return { ...p, mean: p.undefinedMoments || p.medianOnly ? null : avg, median: quantile(sorted, .5), low: quantile(sorted, .025), high: quantile(sorted, .975), sd: p.undefinedMoments || p.medianOnly ? null : sd, ...d, mcse: p.undefinedMoments || p.medianOnly ? null : d.ess ? sd / Math.sqrt(d.ess) : null, probabilityAboveNull: p.null == null ? null : all.filter(v => v > p.null).length / all.length };
+    return { ...p, mean: p.undefinedMoments || p.medianOnly ? null : avg, median: quantile(sorted, .5), low50: quantile(sorted, .25), high50: quantile(sorted, .75), low: quantile(sorted, .025), high: quantile(sorted, .975), sd: p.undefinedMoments || p.medianOnly ? null : sd, ...d, mcse: p.undefinedMoments || p.medianOnly ? null : d.ess ? sd / Math.sqrt(d.ess) : null, probabilityAboveNull: p.null == null ? null : all.filter(v => v > p.null).length / all.length };
   });
 }

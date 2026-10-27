@@ -17,3 +17,15 @@ Kaggle lists the license as **Database: Open Database, Contents: Database Conten
 MonthlyIncome is recorded in unspecified dataset currency units; the app must not label it USD. Satisfaction, education, job level, and similar integer codes are ordinal categories, not automatically continuous measurements. EmployeeCount, Over18, and StandardHours are constants and EmployeeNumber is an identifier, so they are not offered as explanatory variables.
 
 This cross-sectional demonstration supports exploratory associations under the stated models. It does not identify intervention effects or provide a validated operational attrition prediction system.
+
+## Ordered response labels
+
+The [Kaggle dataset description](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset), verified through its [primary metadata API](https://www.kaggle.com/api/v1/datasets/view/pavansubhasht/ibm-hr-analytics-attrition-dataset) on 27 October 2026, defines:
+
+| Field | 1 | 2 | 3 | 4 |
+| --- | --- | --- | --- | --- |
+| JobSatisfaction | Low | Medium | High | Very High |
+| EnvironmentSatisfaction | Low | Medium | High | Very High |
+| WorkLifeBalance | Bad | Good | Better | Best |
+
+The app preserves this order, including categories absent from a selected scope. The labels do not imply equally spaced measurements.
