@@ -6,7 +6,7 @@ A small educational People Analytics lab, built with HTML, CSS and JavaScript. I
 
 ## Run locally
 
-Use a recent Node.js release (tested with Node 24). There are no npm dependencies, build step, runtime CDNs, API keys or model-fitting backend.
+Use a recent Node.js release (tested with Node 24). There are no npm dependencies, build step, runtime CDNs, API keys or model-fitting backend. Fonts (Bricolage Grotesque, Instrument Sans, Caveat) are self-hosted latin subsets in `fonts/`, each under the SIL Open Font License 1.1 with its license file alongside.
 
 ```sh
 npm run dev
