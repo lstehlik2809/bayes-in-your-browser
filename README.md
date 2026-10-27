@@ -146,4 +146,4 @@ The repository root is the static site. `.nojekyll` allows direct serving withou
 
 ## Files and licenses
 
-`engine.js` contains the model/sampler API, with ordinal and hierarchical components in `advanced.js`; `worker.js` runs it away from the UI; `app.js` owns interaction and chart rendering. `scripts/serve.mjs` is a local static server. The app's code is MIT licensed. The IBM data retains its [separate Open Data Commons terms](data/SOURCE.md).
+`engine.js` contains the model/sampler API, with ordinal and hierarchical components in `advanced.js`; `worker.js` runs it away from the UI; `app.js` owns interaction and chart rendering. `scripts/serve.mjs` is a local static server. `scripts/record-demo.mjs` (Playwright, like the browser check) and `scripts/encode-demo-gif.py` (Pillow and ffmpeg) produce the demo GIF in `media/`. The app's code is MIT licensed. The IBM data retains its [separate Open Data Commons terms](data/SOURCE.md).
